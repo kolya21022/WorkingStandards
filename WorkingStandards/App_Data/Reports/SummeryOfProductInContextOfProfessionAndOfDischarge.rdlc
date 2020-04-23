@@ -1,0 +1,2458 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Report xmlns="http://schemas.microsoft.com/sqlserver/reporting/2008/01/reportdefinition" xmlns:rd="http://schemas.microsoft.com/SQLServer/reporting/reportdesigner">
+  <Body>
+    <ReportItems>
+      <Tablix Name="Tablix1">
+        <TablixBody>
+          <TablixColumns>
+            <TablixColumn>
+              <Width>24.47086cm</Width>
+            </TablixColumn>
+          </TablixColumns>
+          <TablixRows>
+            <TablixRow>
+              <Height>4.34112cm</Height>
+              <TablixCells>
+                <TablixCell>
+                  <CellContents>
+                    <Rectangle Name="Rectangle1">
+                      <ReportItems>
+                        <Tablix Name="Tablix2">
+                          <TablixBody>
+                            <TablixColumns>
+                              <TablixColumn>
+                                <Width>24.47086cm</Width>
+                              </TablixColumn>
+                            </TablixColumns>
+                            <TablixRows>
+                              <TablixRow>
+                                <Height>1.8cm</Height>
+                                <TablixCells>
+                                  <TablixCell>
+                                    <CellContents>
+                                      <Rectangle Name="Rectangle3">
+                                        <ReportItems>
+                                          <Textbox Name="ProfessionId">
+                                            <CanGrow>true</CanGrow>
+                                            <KeepTogether>true</KeepTogether>
+                                            <Paragraphs>
+                                              <Paragraph>
+                                                <TextRuns>
+                                                  <TextRun>
+                                                    <Value>="Код: " &amp; Fields!ProfessionId.Value</Value>
+                                                    <Style />
+                                                  </TextRun>
+                                                </TextRuns>
+                                                <Style>
+                                                  <TextAlign>Center</TextAlign>
+                                                </Style>
+                                              </Paragraph>
+                                            </Paragraphs>
+                                            <rd:DefaultName>ProfessionId</rd:DefaultName>
+                                            <Left>6.18592cm</Left>
+                                            <Height>0.6cm</Height>
+                                            <Width>2.50882cm</Width>
+                                            <Style>
+                                              <Border>
+                                                <Style>None</Style>
+                                              </Border>
+                                              <TopBorder>
+                                                <Color>LightGrey</Color>
+                                                <Style>Solid</Style>
+                                                <Width>1pt</Width>
+                                              </TopBorder>
+                                              <BottomBorder>
+                                                <Color>LightGrey</Color>
+                                                <Style>Solid</Style>
+                                                <Width>1pt</Width>
+                                              </BottomBorder>
+                                              <LeftBorder>
+                                                <Color>LightGrey</Color>
+                                                <Style>Solid</Style>
+                                                <Width>1pt</Width>
+                                              </LeftBorder>
+                                              <PaddingLeft>2pt</PaddingLeft>
+                                              <PaddingRight>2pt</PaddingRight>
+                                              <PaddingTop>2pt</PaddingTop>
+                                              <PaddingBottom>2pt</PaddingBottom>
+                                            </Style>
+                                          </Textbox>
+                                          <Textbox Name="Textbox17">
+                                            <CanGrow>true</CanGrow>
+                                            <KeepTogether>true</KeepTogether>
+                                            <Paragraphs>
+                                              <Paragraph>
+                                                <TextRuns>
+                                                  <TextRun>
+                                                    <Value>=" Наименование: " &amp; Fields!ProfessionName.Value</Value>
+                                                    <Style />
+                                                  </TextRun>
+                                                </TextRuns>
+                                                <Style>
+                                                  <TextAlign>Left</TextAlign>
+                                                </Style>
+                                              </Paragraph>
+                                            </Paragraphs>
+                                            <rd:DefaultName>Textbox17</rd:DefaultName>
+                                            <Left>8.69473cm</Left>
+                                            <Height>0.6cm</Height>
+                                            <Width>9.50612cm</Width>
+                                            <ZIndex>1</ZIndex>
+                                            <Style>
+                                              <Border>
+                                                <Style>None</Style>
+                                              </Border>
+                                              <TopBorder>
+                                                <Color>LightGrey</Color>
+                                                <Style>Solid</Style>
+                                                <Width>1pt</Width>
+                                              </TopBorder>
+                                              <BottomBorder>
+                                                <Color>LightGrey</Color>
+                                                <Style>Solid</Style>
+                                                <Width>1pt</Width>
+                                              </BottomBorder>
+                                              <RightBorder>
+                                                <Color>LightGrey</Color>
+                                                <Style>Solid</Style>
+                                                <Width>1pt</Width>
+                                              </RightBorder>
+                                              <PaddingLeft>2pt</PaddingLeft>
+                                              <PaddingRight>2pt</PaddingRight>
+                                              <PaddingTop>2pt</PaddingTop>
+                                              <PaddingBottom>2pt</PaddingBottom>
+                                            </Style>
+                                          </Textbox>
+                                          <Textbox Name="Textbox18">
+                                            <CanGrow>true</CanGrow>
+                                            <KeepTogether>true</KeepTogether>
+                                            <Paragraphs>
+                                              <Paragraph>
+                                                <TextRuns>
+                                                  <TextRun>
+                                                    <Value>=iif(Fields!Vstk1.Value&lt;&gt;0,round(Fields!Vstk1.Value*CDec(Parameters!Koeft.Value),3), string.Empty)</Value>
+                                                    <Style />
+                                                  </TextRun>
+                                                </TextRuns>
+                                                <Style />
+                                              </Paragraph>
+                                            </Paragraphs>
+                                            <rd:DefaultName>Textbox18</rd:DefaultName>
+                                            <Top>0.6cm</Top>
+                                            <Height>0.6cm</Height>
+                                            <Width>2.32361cm</Width>
+                                            <ZIndex>2</ZIndex>
+                                            <Style>
+                                              <Border>
+                                                <Style>None</Style>
+                                              </Border>
+                                              <TopBorder>
+                                                <Color>LightGrey</Color>
+                                                <Style>Solid</Style>
+                                                <Width>1pt</Width>
+                                              </TopBorder>
+                                              <LeftBorder>
+                                                <Color>LightGrey</Color>
+                                                <Style>Solid</Style>
+                                                <Width>1pt</Width>
+                                              </LeftBorder>
+                                              <RightBorder>
+                                                <Color>LightGrey</Color>
+                                                <Style>Solid</Style>
+                                                <Width>1pt</Width>
+                                              </RightBorder>
+                                              <PaddingLeft>2pt</PaddingLeft>
+                                              <PaddingRight>2pt</PaddingRight>
+                                              <PaddingTop>2pt</PaddingTop>
+                                              <PaddingBottom>2pt</PaddingBottom>
+                                            </Style>
+                                          </Textbox>
+                                          <Textbox Name="Textbox19">
+                                            <CanGrow>true</CanGrow>
+                                            <KeepTogether>true</KeepTogether>
+                                            <Paragraphs>
+                                              <Paragraph>
+                                                <TextRuns>
+                                                  <TextRun>
+                                                    <Value>=iif(Fields!Rstk1.Value&lt;&gt;0,round(Fields!Rstk1.Value*CDec(Parameters!Koefz.Value),3),string.Empty)</Value>
+                                                    <Style />
+                                                  </TextRun>
+                                                </TextRuns>
+                                                <Style />
+                                              </Paragraph>
+                                            </Paragraphs>
+                                            <rd:DefaultName>Textbox18</rd:DefaultName>
+                                            <Top>1.2cm</Top>
+                                            <Height>0.6cm</Height>
+                                            <Width>2.32361cm</Width>
+                                            <ZIndex>3</ZIndex>
+                                            <Style>
+                                              <Border>
+                                                <Style>None</Style>
+                                              </Border>
+                                              <BottomBorder>
+                                                <Color>LightGrey</Color>
+                                                <Style>Solid</Style>
+                                              </BottomBorder>
+                                              <LeftBorder>
+                                                <Color>LightGrey</Color>
+                                                <Style>Solid</Style>
+                                              </LeftBorder>
+                                              <RightBorder>
+                                                <Color>LightGrey</Color>
+                                                <Style>Solid</Style>
+                                              </RightBorder>
+                                              <PaddingLeft>2pt</PaddingLeft>
+                                              <PaddingRight>2pt</PaddingRight>
+                                              <PaddingTop>2pt</PaddingTop>
+                                              <PaddingBottom>2pt</PaddingBottom>
+                                            </Style>
+                                          </Textbox>
+                                          <Textbox Name="Textbox20">
+                                            <CanGrow>true</CanGrow>
+                                            <KeepTogether>true</KeepTogether>
+                                            <Paragraphs>
+                                              <Paragraph>
+                                                <TextRuns>
+                                                  <TextRun>
+                                                    <Value>=iif(Fields!Vstk2.Value&lt;&gt;0,round(Fields!Vstk2.Value*CDec(Parameters!Koeft.Value),3), string.Empty)</Value>
+                                                    <Style />
+                                                  </TextRun>
+                                                </TextRuns>
+                                                <Style />
+                                              </Paragraph>
+                                            </Paragraphs>
+                                            <rd:DefaultName>Textbox18</rd:DefaultName>
+                                            <Top>0.6cm</Top>
+                                            <Left>2.32361cm</Left>
+                                            <Height>0.6cm</Height>
+                                            <Width>2.46473cm</Width>
+                                            <ZIndex>4</ZIndex>
+                                            <Style>
+                                              <Border>
+                                                <Style>None</Style>
+                                              </Border>
+                                              <TopBorder>
+                                                <Color>LightGrey</Color>
+                                                <Style>Solid</Style>
+                                                <Width>1pt</Width>
+                                              </TopBorder>
+                                              <RightBorder>
+                                                <Color>LightGrey</Color>
+                                                <Style>Solid</Style>
+                                                <Width>1pt</Width>
+                                              </RightBorder>
+                                              <PaddingLeft>2pt</PaddingLeft>
+                                              <PaddingRight>2pt</PaddingRight>
+                                              <PaddingTop>2pt</PaddingTop>
+                                              <PaddingBottom>2pt</PaddingBottom>
+                                            </Style>
+                                          </Textbox>
+                                          <Textbox Name="Textbox21">
+                                            <CanGrow>true</CanGrow>
+                                            <KeepTogether>true</KeepTogether>
+                                            <Paragraphs>
+                                              <Paragraph>
+                                                <TextRuns>
+                                                  <TextRun>
+                                                    <Value>=iif(Fields!Rstk2.Value&lt;&gt;0,round(Fields!Rstk2.Value*CDec(Parameters!Koefz.Value),3),string.Empty)</Value>
+                                                    <Style />
+                                                  </TextRun>
+                                                </TextRuns>
+                                                <Style />
+                                              </Paragraph>
+                                            </Paragraphs>
+                                            <rd:DefaultName>Textbox18</rd:DefaultName>
+                                            <Top>1.2cm</Top>
+                                            <Left>2.32361cm</Left>
+                                            <Height>0.6cm</Height>
+                                            <Width>2.46473cm</Width>
+                                            <ZIndex>5</ZIndex>
+                                            <Style>
+                                              <Border>
+                                                <Style>None</Style>
+                                              </Border>
+                                              <BottomBorder>
+                                                <Color>LightGrey</Color>
+                                                <Style>Solid</Style>
+                                                <Width>1pt</Width>
+                                              </BottomBorder>
+                                              <RightBorder>
+                                                <Color>LightGrey</Color>
+                                                <Style>Solid</Style>
+                                                <Width>1pt</Width>
+                                              </RightBorder>
+                                              <PaddingLeft>2pt</PaddingLeft>
+                                              <PaddingRight>2pt</PaddingRight>
+                                              <PaddingTop>2pt</PaddingTop>
+                                              <PaddingBottom>2pt</PaddingBottom>
+                                            </Style>
+                                          </Textbox>
+                                          <Textbox Name="Textbox22">
+                                            <CanGrow>true</CanGrow>
+                                            <KeepTogether>true</KeepTogether>
+                                            <Paragraphs>
+                                              <Paragraph>
+                                                <TextRuns>
+                                                  <TextRun>
+                                                    <Value>=iif(Fields!Vstk3.Value&lt;&gt;0,round(Fields!Vstk3.Value*CDec(Parameters!Koeft.Value),3), string.Empty)</Value>
+                                                    <Style />
+                                                  </TextRun>
+                                                </TextRuns>
+                                                <Style />
+                                              </Paragraph>
+                                            </Paragraphs>
+                                            <rd:DefaultName>Textbox18</rd:DefaultName>
+                                            <Top>0.6cm</Top>
+                                            <Left>4.78833cm</Left>
+                                            <Height>0.6cm</Height>
+                                            <Width>2.3589cm</Width>
+                                            <ZIndex>6</ZIndex>
+                                            <Style>
+                                              <Border>
+                                                <Style>None</Style>
+                                              </Border>
+                                              <TopBorder>
+                                                <Color>LightGrey</Color>
+                                                <Style>Solid</Style>
+                                                <Width>1pt</Width>
+                                              </TopBorder>
+                                              <RightBorder>
+                                                <Color>LightGrey</Color>
+                                                <Style>Solid</Style>
+                                                <Width>1pt</Width>
+                                              </RightBorder>
+                                              <PaddingLeft>2pt</PaddingLeft>
+                                              <PaddingRight>2pt</PaddingRight>
+                                              <PaddingTop>2pt</PaddingTop>
+                                              <PaddingBottom>2pt</PaddingBottom>
+                                            </Style>
+                                          </Textbox>
+                                          <Textbox Name="Textbox23">
+                                            <CanGrow>true</CanGrow>
+                                            <KeepTogether>true</KeepTogether>
+                                            <Paragraphs>
+                                              <Paragraph>
+                                                <TextRuns>
+                                                  <TextRun>
+                                                    <Value>=iif(Fields!Rstk3.Value&lt;&gt;0,round(Fields!Rstk3.Value*CDec(Parameters!Koefz.Value),3),string.Empty)</Value>
+                                                    <Style />
+                                                  </TextRun>
+                                                </TextRuns>
+                                                <Style />
+                                              </Paragraph>
+                                            </Paragraphs>
+                                            <rd:DefaultName>Textbox18</rd:DefaultName>
+                                            <Top>1.2cm</Top>
+                                            <Left>4.78833cm</Left>
+                                            <Height>0.6cm</Height>
+                                            <Width>2.3589cm</Width>
+                                            <ZIndex>7</ZIndex>
+                                            <Style>
+                                              <Border>
+                                                <Style>None</Style>
+                                              </Border>
+                                              <BottomBorder>
+                                                <Color>LightGrey</Color>
+                                                <Style>Solid</Style>
+                                              </BottomBorder>
+                                              <RightBorder>
+                                                <Color>LightGrey</Color>
+                                                <Style>Solid</Style>
+                                              </RightBorder>
+                                              <PaddingLeft>2pt</PaddingLeft>
+                                              <PaddingRight>2pt</PaddingRight>
+                                              <PaddingTop>2pt</PaddingTop>
+                                              <PaddingBottom>2pt</PaddingBottom>
+                                            </Style>
+                                          </Textbox>
+                                          <Textbox Name="Textbox24">
+                                            <CanGrow>true</CanGrow>
+                                            <KeepTogether>true</KeepTogether>
+                                            <Paragraphs>
+                                              <Paragraph>
+                                                <TextRuns>
+                                                  <TextRun>
+                                                    <Value>=iif(Fields!Vstk4.Value&lt;&gt;0,round(Fields!Vstk4.Value*CDec(Parameters!Koeft.Value),3), string.Empty)</Value>
+                                                    <Style />
+                                                  </TextRun>
+                                                </TextRuns>
+                                                <Style />
+                                              </Paragraph>
+                                            </Paragraphs>
+                                            <rd:DefaultName>Textbox18</rd:DefaultName>
+                                            <Top>0.6cm</Top>
+                                            <Left>7.14722cm</Left>
+                                            <Height>0.6cm</Height>
+                                            <Width>2.42946cm</Width>
+                                            <ZIndex>8</ZIndex>
+                                            <Style>
+                                              <Border>
+                                                <Style>None</Style>
+                                              </Border>
+                                              <TopBorder>
+                                                <Color>LightGrey</Color>
+                                                <Style>Solid</Style>
+                                                <Width>1pt</Width>
+                                              </TopBorder>
+                                              <RightBorder>
+                                                <Color>LightGrey</Color>
+                                                <Style>Solid</Style>
+                                                <Width>1pt</Width>
+                                              </RightBorder>
+                                              <PaddingLeft>2pt</PaddingLeft>
+                                              <PaddingRight>2pt</PaddingRight>
+                                              <PaddingTop>2pt</PaddingTop>
+                                              <PaddingBottom>2pt</PaddingBottom>
+                                            </Style>
+                                          </Textbox>
+                                          <Textbox Name="Textbox25">
+                                            <CanGrow>true</CanGrow>
+                                            <KeepTogether>true</KeepTogether>
+                                            <Paragraphs>
+                                              <Paragraph>
+                                                <TextRuns>
+                                                  <TextRun>
+                                                    <Value>=iif(Fields!Rstk4.Value&lt;&gt;0,round(Fields!Rstk4.Value*CDec(Parameters!Koefz.Value),3),string.Empty)</Value>
+                                                    <Style />
+                                                  </TextRun>
+                                                </TextRuns>
+                                                <Style />
+                                              </Paragraph>
+                                            </Paragraphs>
+                                            <rd:DefaultName>Textbox18</rd:DefaultName>
+                                            <Top>1.2cm</Top>
+                                            <Left>7.14722cm</Left>
+                                            <Height>0.6cm</Height>
+                                            <Width>2.42946cm</Width>
+                                            <ZIndex>9</ZIndex>
+                                            <Style>
+                                              <Border>
+                                                <Style>None</Style>
+                                              </Border>
+                                              <BottomBorder>
+                                                <Color>LightGrey</Color>
+                                                <Style>Solid</Style>
+                                                <Width>1pt</Width>
+                                              </BottomBorder>
+                                              <RightBorder>
+                                                <Color>LightGrey</Color>
+                                                <Style>Solid</Style>
+                                                <Width>1pt</Width>
+                                              </RightBorder>
+                                              <PaddingLeft>2pt</PaddingLeft>
+                                              <PaddingRight>2pt</PaddingRight>
+                                              <PaddingTop>2pt</PaddingTop>
+                                              <PaddingBottom>2pt</PaddingBottom>
+                                            </Style>
+                                          </Textbox>
+                                          <Textbox Name="Textbox26">
+                                            <CanGrow>true</CanGrow>
+                                            <KeepTogether>true</KeepTogether>
+                                            <Paragraphs>
+                                              <Paragraph>
+                                                <TextRuns>
+                                                  <TextRun>
+                                                    <Value>=iif(Fields!Vstk5.Value&lt;&gt;0,round(Fields!Vstk5.Value*CDec(Parameters!Koeft.Value),3), string.Empty)</Value>
+                                                    <Style />
+                                                  </TextRun>
+                                                </TextRuns>
+                                                <Style />
+                                              </Paragraph>
+                                            </Paragraphs>
+                                            <rd:DefaultName>Textbox18</rd:DefaultName>
+                                            <Top>0.6cm</Top>
+                                            <Left>9.57668cm</Left>
+                                            <Height>0.6cm</Height>
+                                            <Width>2.39417cm</Width>
+                                            <ZIndex>10</ZIndex>
+                                            <Style>
+                                              <Border>
+                                                <Style>None</Style>
+                                              </Border>
+                                              <TopBorder>
+                                                <Color>LightGrey</Color>
+                                                <Style>Solid</Style>
+                                                <Width>1pt</Width>
+                                              </TopBorder>
+                                              <RightBorder>
+                                                <Color>LightGrey</Color>
+                                                <Style>Solid</Style>
+                                                <Width>1pt</Width>
+                                              </RightBorder>
+                                              <PaddingLeft>2pt</PaddingLeft>
+                                              <PaddingRight>2pt</PaddingRight>
+                                              <PaddingTop>2pt</PaddingTop>
+                                              <PaddingBottom>2pt</PaddingBottom>
+                                            </Style>
+                                          </Textbox>
+                                          <Textbox Name="Textbox27">
+                                            <CanGrow>true</CanGrow>
+                                            <KeepTogether>true</KeepTogether>
+                                            <Paragraphs>
+                                              <Paragraph>
+                                                <TextRuns>
+                                                  <TextRun>
+                                                    <Value>=iif(Fields!Rstk5.Value&lt;&gt;0,round(Fields!Rstk5.Value*CDec(Parameters!Koefz.Value),3),string.Empty)</Value>
+                                                    <Style />
+                                                  </TextRun>
+                                                </TextRuns>
+                                                <Style />
+                                              </Paragraph>
+                                            </Paragraphs>
+                                            <rd:DefaultName>Textbox18</rd:DefaultName>
+                                            <Top>1.2cm</Top>
+                                            <Left>9.57668cm</Left>
+                                            <Height>0.6cm</Height>
+                                            <Width>2.39417cm</Width>
+                                            <ZIndex>11</ZIndex>
+                                            <Style>
+                                              <Border>
+                                                <Style>None</Style>
+                                              </Border>
+                                              <BottomBorder>
+                                                <Color>LightGrey</Color>
+                                                <Style>Solid</Style>
+                                                <Width>1pt</Width>
+                                              </BottomBorder>
+                                              <RightBorder>
+                                                <Color>LightGrey</Color>
+                                                <Style>Solid</Style>
+                                                <Width>1pt</Width>
+                                              </RightBorder>
+                                              <PaddingLeft>2pt</PaddingLeft>
+                                              <PaddingRight>2pt</PaddingRight>
+                                              <PaddingTop>2pt</PaddingTop>
+                                              <PaddingBottom>2pt</PaddingBottom>
+                                            </Style>
+                                          </Textbox>
+                                          <Textbox Name="Textbox28">
+                                            <CanGrow>true</CanGrow>
+                                            <KeepTogether>true</KeepTogether>
+                                            <Paragraphs>
+                                              <Paragraph>
+                                                <TextRuns>
+                                                  <TextRun>
+                                                    <Value>=iif(Fields!Vstk6.Value&lt;&gt;0,round(Fields!Vstk6.Value*CDec(Parameters!Koeft.Value),3), string.Empty)</Value>
+                                                    <Style />
+                                                  </TextRun>
+                                                </TextRuns>
+                                                <Style />
+                                              </Paragraph>
+                                            </Paragraphs>
+                                            <rd:DefaultName>Textbox18</rd:DefaultName>
+                                            <Top>0.6cm</Top>
+                                            <Left>11.97084cm</Left>
+                                            <Height>0.6cm</Height>
+                                            <Width>2.39417cm</Width>
+                                            <ZIndex>12</ZIndex>
+                                            <Style>
+                                              <Border>
+                                                <Style>None</Style>
+                                              </Border>
+                                              <TopBorder>
+                                                <Color>LightGrey</Color>
+                                                <Style>Solid</Style>
+                                                <Width>1pt</Width>
+                                              </TopBorder>
+                                              <RightBorder>
+                                                <Color>LightGrey</Color>
+                                                <Style>Solid</Style>
+                                                <Width>1pt</Width>
+                                              </RightBorder>
+                                              <PaddingLeft>2pt</PaddingLeft>
+                                              <PaddingRight>2pt</PaddingRight>
+                                              <PaddingTop>2pt</PaddingTop>
+                                              <PaddingBottom>2pt</PaddingBottom>
+                                            </Style>
+                                          </Textbox>
+                                          <Textbox Name="Textbox29">
+                                            <CanGrow>true</CanGrow>
+                                            <KeepTogether>true</KeepTogether>
+                                            <Paragraphs>
+                                              <Paragraph>
+                                                <TextRuns>
+                                                  <TextRun>
+                                                    <Value>=iif(Fields!Rstk6.Value&lt;&gt;0,round(Fields!Rstk6.Value*CDec(Parameters!Koefz.Value),3),string.Empty)</Value>
+                                                    <Style />
+                                                  </TextRun>
+                                                </TextRuns>
+                                                <Style />
+                                              </Paragraph>
+                                            </Paragraphs>
+                                            <rd:DefaultName>Textbox18</rd:DefaultName>
+                                            <Top>1.2cm</Top>
+                                            <Left>11.97084cm</Left>
+                                            <Height>0.6cm</Height>
+                                            <Width>2.39417cm</Width>
+                                            <ZIndex>13</ZIndex>
+                                            <Style>
+                                              <Border>
+                                                <Style>None</Style>
+                                              </Border>
+                                              <BottomBorder>
+                                                <Color>LightGrey</Color>
+                                                <Style>Solid</Style>
+                                                <Width>1pt</Width>
+                                              </BottomBorder>
+                                              <RightBorder>
+                                                <Color>LightGrey</Color>
+                                                <Style>Solid</Style>
+                                                <Width>1pt</Width>
+                                              </RightBorder>
+                                              <PaddingLeft>2pt</PaddingLeft>
+                                              <PaddingRight>2pt</PaddingRight>
+                                              <PaddingTop>2pt</PaddingTop>
+                                              <PaddingBottom>2pt</PaddingBottom>
+                                            </Style>
+                                          </Textbox>
+                                          <Textbox Name="Textbox30">
+                                            <CanGrow>true</CanGrow>
+                                            <KeepTogether>true</KeepTogether>
+                                            <Paragraphs>
+                                              <Paragraph>
+                                                <TextRuns>
+                                                  <TextRun>
+                                                    <Value>=iif(Fields!Vstk1.Value&lt;&gt;0 Or Fields!Vstk2.Value&lt;&gt;0 Or Fields!Vstk3.Value&lt;&gt;0 Or Fields!Vstk4.Value&lt;&gt;0 Or Fields!Vstk5.Value&lt;&gt;0 Or Fields!Vstk6.Value&lt;&gt;0, 
+round(Fields!Vstk1.Value*CDec(Parameters!Koeft.Value),3) + round(Fields!Vstk2.Value*CDec(Parameters!Koeft.Value),3) + round(Fields!Vstk3.Value*CDec(Parameters!Koeft.Value),3) + 
+round(Fields!Vstk4.Value*CDec(Parameters!Koeft.Value),3) + round(Fields!Vstk5.Value*CDec(Parameters!Koeft.Value),3) + round(Fields!Vstk6.Value*CDec(Parameters!Koeft.Value),3), string.Empty)</Value>
+                                                    <Style />
+                                                  </TextRun>
+                                                </TextRuns>
+                                                <Style />
+                                              </Paragraph>
+                                            </Paragraphs>
+                                            <rd:DefaultName>Textbox18</rd:DefaultName>
+                                            <Top>0.6cm</Top>
+                                            <Left>14.36502cm</Left>
+                                            <Height>0.6cm</Height>
+                                            <Width>2.5cm</Width>
+                                            <ZIndex>14</ZIndex>
+                                            <Style>
+                                              <Border>
+                                                <Style>None</Style>
+                                              </Border>
+                                              <TopBorder>
+                                                <Color>LightGrey</Color>
+                                                <Style>Solid</Style>
+                                                <Width>1pt</Width>
+                                              </TopBorder>
+                                              <RightBorder>
+                                                <Color>LightGrey</Color>
+                                                <Style>Solid</Style>
+                                                <Width>1pt</Width>
+                                              </RightBorder>
+                                              <PaddingLeft>2pt</PaddingLeft>
+                                              <PaddingRight>2pt</PaddingRight>
+                                              <PaddingTop>2pt</PaddingTop>
+                                              <PaddingBottom>2pt</PaddingBottom>
+                                            </Style>
+                                          </Textbox>
+                                          <Textbox Name="Textbox31">
+                                            <CanGrow>true</CanGrow>
+                                            <KeepTogether>true</KeepTogether>
+                                            <Paragraphs>
+                                              <Paragraph>
+                                                <TextRuns>
+                                                  <TextRun>
+                                                    <Value>=iif(Fields!Rstk1.Value&lt;&gt;0 Or Fields!Rstk2.Value&lt;&gt;0 Or Fields!Rstk3.Value&lt;&gt;0 Or Fields!Rstk4.Value&lt;&gt;0 Or Fields!Rstk5.Value&lt;&gt;0 Or Fields!Rstk6.Value&lt;&gt;0, 
+round(Fields!Rstk1.Value*CDec(Parameters!Koefz.Value),3) + round(Fields!Rstk2.Value*CDec(Parameters!Koefz.Value),3) + round(Fields!Rstk3.Value*CDec(Parameters!Koefz.Value),3) + round(Fields!Rstk4.Value*CDec(Parameters!Koefz.Value),3) +
+round(Fields!Rstk5.Value*CDec(Parameters!Koefz.Value),3) + round(Fields!Rstk6.Value*CDec(Parameters!Koefz.Value),3), string.Empty)</Value>
+                                                    <Style />
+                                                  </TextRun>
+                                                </TextRuns>
+                                                <Style />
+                                              </Paragraph>
+                                            </Paragraphs>
+                                            <rd:DefaultName>Textbox18</rd:DefaultName>
+                                            <Top>1.2cm</Top>
+                                            <Left>14.36502cm</Left>
+                                            <Height>0.6cm</Height>
+                                            <Width>2.5cm</Width>
+                                            <ZIndex>15</ZIndex>
+                                            <Style>
+                                              <Border>
+                                                <Style>None</Style>
+                                              </Border>
+                                              <BottomBorder>
+                                                <Color>LightGrey</Color>
+                                                <Style>Solid</Style>
+                                                <Width>1pt</Width>
+                                              </BottomBorder>
+                                              <RightBorder>
+                                                <Color>LightGrey</Color>
+                                                <Style>Solid</Style>
+                                                <Width>1pt</Width>
+                                              </RightBorder>
+                                              <PaddingLeft>2pt</PaddingLeft>
+                                              <PaddingRight>2pt</PaddingRight>
+                                              <PaddingTop>2pt</PaddingTop>
+                                              <PaddingBottom>2pt</PaddingBottom>
+                                            </Style>
+                                          </Textbox>
+                                          <Textbox Name="Textbox32">
+                                            <CanGrow>true</CanGrow>
+                                            <KeepTogether>true</KeepTogether>
+                                            <Paragraphs>
+                                              <Paragraph>
+                                                <TextRuns>
+                                                  <TextRun>
+                                                    <Value>=iif(Fields!Prtnorm1.Value&lt;&gt;0 or Fields!Prtnorm2.Value&lt;&gt;0 or Fields!Prtnorm3.Value&lt;&gt;0 or Fields!Prtnorm4.Value&lt;&gt;0
+or Fields!Prtnorm5.Value&lt;&gt;0 or Fields!Prtnorm6.Value&lt;&gt;0, 
+round(Fields!Prtnorm1.Value*CDec(Parameters!Koefz.Value),3)+
+round(Fields!Prtnorm2.Value*CDec(Parameters!Koefz.Value),3)+
+round(Fields!Prtnorm3.Value*CDec(Parameters!Koefz.Value),3)+
+round(Fields!Prtnorm4.Value*CDec(Parameters!Koefz.Value),3)+
+round(Fields!Prtnorm5.Value*CDec(Parameters!Koefz.Value),3)+
+round(Fields!Prtnorm6.Value*CDec(Parameters!Koefz.Value),3), string.Empty)</Value>
+                                                    <Style />
+                                                  </TextRun>
+                                                </TextRuns>
+                                                <Style />
+                                              </Paragraph>
+                                            </Paragraphs>
+                                            <rd:DefaultName>Textbox18</rd:DefaultName>
+                                            <Top>0.6cm</Top>
+                                            <Left>16.86501cm</Left>
+                                            <Height>0.6cm</Height>
+                                            <Width>2.53528cm</Width>
+                                            <ZIndex>16</ZIndex>
+                                            <Style>
+                                              <Border>
+                                                <Style>None</Style>
+                                              </Border>
+                                              <TopBorder>
+                                                <Color>LightGrey</Color>
+                                                <Style>Solid</Style>
+                                                <Width>1pt</Width>
+                                              </TopBorder>
+                                              <RightBorder>
+                                                <Color>LightGrey</Color>
+                                                <Style>Solid</Style>
+                                                <Width>1pt</Width>
+                                              </RightBorder>
+                                              <PaddingLeft>2pt</PaddingLeft>
+                                              <PaddingRight>2pt</PaddingRight>
+                                              <PaddingTop>2pt</PaddingTop>
+                                              <PaddingBottom>2pt</PaddingBottom>
+                                            </Style>
+                                          </Textbox>
+                                          <Textbox Name="Textbox33">
+                                            <CanGrow>true</CanGrow>
+                                            <KeepTogether>true</KeepTogether>
+                                            <Paragraphs>
+                                              <Paragraph>
+                                                <TextRuns>
+                                                  <TextRun>
+                                                    <Value>=iif(Fields!Nadb1.Value&lt;&gt;0 Or Fields!Nadb2.Value&lt;&gt;0 Or 
+Fields!Nadb3.Value&lt;&gt;0 Or Fields!Nadb4.Value&lt;&gt;0 Or Fields!Nadb5.Value&lt;&gt;0 Or Fields!Nadb6.Value,
+round(Fields!Nadb1.Value*CDec(Parameters!Koefz.Value),3) + 
+round(Fields!Nadb2.Value*CDec(Parameters!Koefz.Value),3) +
+round(Fields!Nadb3.Value*CDec(Parameters!Koefz.Value),3) +
+round(Fields!Nadb4.Value*CDec(Parameters!Koefz.Value),3) +
+round(Fields!Nadb5.Value*CDec(Parameters!Koefz.Value),3) +
+round(Fields!Nadb6.Value*CDec(Parameters!Koefz.Value),3),
+ string.Empty)</Value>
+                                                    <Style />
+                                                  </TextRun>
+                                                </TextRuns>
+                                                <Style />
+                                              </Paragraph>
+                                            </Paragraphs>
+                                            <rd:DefaultName>Textbox18</rd:DefaultName>
+                                            <Top>1.2cm</Top>
+                                            <Left>16.86501cm</Left>
+                                            <Height>0.6cm</Height>
+                                            <Width>2.53528cm</Width>
+                                            <ZIndex>17</ZIndex>
+                                            <Style>
+                                              <Border>
+                                                <Style>None</Style>
+                                              </Border>
+                                              <BottomBorder>
+                                                <Color>LightGrey</Color>
+                                                <Style>Solid</Style>
+                                                <Width>1pt</Width>
+                                              </BottomBorder>
+                                              <RightBorder>
+                                                <Color>LightGrey</Color>
+                                                <Style>Solid</Style>
+                                                <Width>1pt</Width>
+                                              </RightBorder>
+                                              <PaddingLeft>2pt</PaddingLeft>
+                                              <PaddingRight>2pt</PaddingRight>
+                                              <PaddingTop>2pt</PaddingTop>
+                                              <PaddingBottom>2pt</PaddingBottom>
+                                            </Style>
+                                          </Textbox>
+                                          <Textbox Name="Textbox34">
+                                            <CanGrow>true</CanGrow>
+                                            <KeepTogether>true</KeepTogether>
+                                            <Paragraphs>
+                                              <Paragraph>
+                                                <TextRuns>
+                                                  <TextRun>
+                                                    <Value>=iif(Fields!Vstk1.Value&lt;&gt;0 Or Fields!Vstk2.Value&lt;&gt;0 Or Fields!Vstk3.Value&lt;&gt;0 Or Fields!Vstk4.Value&lt;&gt;0 Or Fields!Vstk5.Value&lt;&gt;0 Or Fields!Vstk6.Value&lt;&gt;0, 
+round(Fields!Vstk1.Value*CDec(Parameters!Koeft.Value),3) + round(Fields!Vstk2.Value*CDec(Parameters!Koeft.Value),3) + round(Fields!Vstk3.Value*CDec(Parameters!Koeft.Value),3) + 
+round(Fields!Vstk4.Value*CDec(Parameters!Koeft.Value),3) + round(Fields!Vstk5.Value*CDec(Parameters!Koeft.Value),3) + round(Fields!Vstk6.Value*CDec(Parameters!Koeft.Value),3), string.Empty)</Value>
+                                                    <Style />
+                                                  </TextRun>
+                                                </TextRuns>
+                                                <Style />
+                                              </Paragraph>
+                                            </Paragraphs>
+                                            <rd:DefaultName>Textbox18</rd:DefaultName>
+                                            <Top>0.6cm</Top>
+                                            <Left>19.4003cm</Left>
+                                            <Height>0.6cm</Height>
+                                            <Width>2.57056cm</Width>
+                                            <ZIndex>18</ZIndex>
+                                            <Style>
+                                              <Border>
+                                                <Style>None</Style>
+                                              </Border>
+                                              <TopBorder>
+                                                <Color>LightGrey</Color>
+                                                <Style>Solid</Style>
+                                                <Width>1pt</Width>
+                                              </TopBorder>
+                                              <RightBorder>
+                                                <Color>LightGrey</Color>
+                                                <Style>Solid</Style>
+                                                <Width>1pt</Width>
+                                              </RightBorder>
+                                              <PaddingLeft>2pt</PaddingLeft>
+                                              <PaddingRight>2pt</PaddingRight>
+                                              <PaddingTop>2pt</PaddingTop>
+                                              <PaddingBottom>2pt</PaddingBottom>
+                                            </Style>
+                                          </Textbox>
+                                          <Textbox Name="Textbox35">
+                                            <CanGrow>true</CanGrow>
+                                            <KeepTogether>true</KeepTogether>
+                                            <Paragraphs>
+                                              <Paragraph>
+                                                <TextRuns>
+                                                  <TextRun>
+                                                    <Value>=iif((Fields!Rstk1.Value&lt;&gt;0 or Fields!Prtnorm1.Value&lt;&gt;0 or Fields!Nadb1.Value&lt;&gt;0) or 
+(Fields!Rstk2.Value&lt;&gt;0 or Fields!Prtnorm2.Value&lt;&gt;0 or Fields!Nadb2.Value&lt;&gt;0) or
+(Fields!Rstk3.Value&lt;&gt;0 or Fields!Prtnorm3.Value&lt;&gt;0 or Fields!Nadb3.Value&lt;&gt;0) or
+(Fields!Rstk4.Value&lt;&gt;0 or Fields!Prtnorm4.Value&lt;&gt;0 or Fields!Nadb4.Value&lt;&gt;0) or
+(Fields!Rstk5.Value&lt;&gt;0 or Fields!Prtnorm5.Value&lt;&gt;0 or Fields!Nadb5.Value&lt;&gt;0) or
+(Fields!Rstk6.Value&lt;&gt;0 or Fields!Prtnorm6.Value&lt;&gt;0 or Fields!Nadb6.Value&lt;&gt;0),
+(round(Fields!Rstk1.Value*CDec(Parameters!Koefz.Value),3)+round(Fields!Prtnorm1.Value*CDec(Parameters!Koefz.Value),3)+round(Fields!Nadb1.Value*CDec(Parameters!Koefz.Value),3))+
+(round(Fields!Rstk2.Value*CDec(Parameters!Koefz.Value),3)+round(Fields!Prtnorm2.Value*CDec(Parameters!Koefz.Value),3)+round(Fields!Nadb2.Value*CDec(Parameters!Koefz.Value),3))+
+(round(Fields!Rstk3.Value*CDec(Parameters!Koefz.Value),3)+round(Fields!Prtnorm3.Value*CDec(Parameters!Koefz.Value),3)+round(Fields!Nadb3.Value*CDec(Parameters!Koefz.Value),3))+
+(round(Fields!Rstk4.Value*CDec(Parameters!Koefz.Value),3)+round(Fields!Prtnorm4.Value*CDec(Parameters!Koefz.Value),3)+round(Fields!Nadb4.Value*CDec(Parameters!Koefz.Value),3))+
+(round(Fields!Rstk5.Value*CDec(Parameters!Koefz.Value),3)+round(Fields!Prtnorm5.Value*CDec(Parameters!Koefz.Value),3)+round(Fields!Nadb5.Value*CDec(Parameters!Koefz.Value),3))+
+(round(Fields!Rstk6.Value*CDec(Parameters!Koefz.Value),3)+round(Fields!Prtnorm6.Value*CDec(Parameters!Koefz.Value),3)+round(Fields!Nadb6.Value*CDec(Parameters!Koefz.Value),3)),
+string.Empty)</Value>
+                                                    <Style />
+                                                  </TextRun>
+                                                </TextRuns>
+                                                <Style />
+                                              </Paragraph>
+                                            </Paragraphs>
+                                            <rd:DefaultName>Textbox18</rd:DefaultName>
+                                            <Top>1.2cm</Top>
+                                            <Left>19.4003cm</Left>
+                                            <Height>0.6cm</Height>
+                                            <Width>2.57056cm</Width>
+                                            <ZIndex>19</ZIndex>
+                                            <Style>
+                                              <Border>
+                                                <Style>None</Style>
+                                              </Border>
+                                              <BottomBorder>
+                                                <Color>LightGrey</Color>
+                                                <Style>Solid</Style>
+                                                <Width>1pt</Width>
+                                              </BottomBorder>
+                                              <RightBorder>
+                                                <Color>LightGrey</Color>
+                                                <Style>Solid</Style>
+                                                <Width>1pt</Width>
+                                              </RightBorder>
+                                              <PaddingLeft>2pt</PaddingLeft>
+                                              <PaddingRight>2pt</PaddingRight>
+                                              <PaddingTop>2pt</PaddingTop>
+                                              <PaddingBottom>2pt</PaddingBottom>
+                                            </Style>
+                                          </Textbox>
+                                          <Textbox Name="Textbox36">
+                                            <CanGrow>true</CanGrow>
+                                            <KeepTogether>true</KeepTogether>
+                                            <Paragraphs>
+                                              <Paragraph>
+                                                <TextRuns>
+                                                  <TextRun>
+                                                    <Value>=iif(Fields!Vstk1.Value&lt;&gt;0 Or Fields!Vstk2.Value&lt;&gt;0 Or Fields!Vstk3.Value&lt;&gt;0 Or Fields!Vstk4.Value&lt;&gt;0 Or Fields!Vstk5.Value&lt;&gt;0 Or Fields!Vstk6.Value&lt;&gt;0, 
+round(Fields!Vstk1.Value*CDec(Parameters!Koeft.Value),3) + round(Fields!Vstk2.Value*CDec(Parameters!Koeft.Value),3) + round(Fields!Vstk3.Value*CDec(Parameters!Koeft.Value),3) + 
+round(Fields!Vstk4.Value*CDec(Parameters!Koeft.Value),3) + round(Fields!Vstk5.Value*CDec(Parameters!Koeft.Value),3) + round(Fields!Vstk6.Value*CDec(Parameters!Koeft.Value),3), string.Empty)</Value>
+                                                    <Style />
+                                                  </TextRun>
+                                                </TextRuns>
+                                                <Style />
+                                              </Paragraph>
+                                            </Paragraphs>
+                                            <rd:DefaultName>Textbox18</rd:DefaultName>
+                                            <Top>0.6cm</Top>
+                                            <Left>21.97086cm</Left>
+                                            <Height>0.6cm</Height>
+                                            <Width>2.5cm</Width>
+                                            <ZIndex>20</ZIndex>
+                                            <Style>
+                                              <Border>
+                                                <Style>None</Style>
+                                              </Border>
+                                              <TopBorder>
+                                                <Color>LightGrey</Color>
+                                                <Style>Solid</Style>
+                                                <Width>1pt</Width>
+                                              </TopBorder>
+                                              <RightBorder>
+                                                <Color>LightGrey</Color>
+                                                <Style>Solid</Style>
+                                                <Width>1pt</Width>
+                                              </RightBorder>
+                                              <PaddingLeft>2pt</PaddingLeft>
+                                              <PaddingRight>2pt</PaddingRight>
+                                              <PaddingTop>2pt</PaddingTop>
+                                              <PaddingBottom>2pt</PaddingBottom>
+                                            </Style>
+                                          </Textbox>
+                                          <Textbox Name="Textbox37">
+                                            <CanGrow>true</CanGrow>
+                                            <KeepTogether>true</KeepTogether>
+                                            <Paragraphs>
+                                              <Paragraph>
+                                                <TextRuns>
+                                                  <TextRun>
+                                                    <Value>=iif((Fields!Rstk1.Value&lt;&gt;0 or Fields!Prtnorm1.Value&lt;&gt;0 or Fields!Nadb1.Value&lt;&gt;0) or 
+(Fields!Rstk2.Value&lt;&gt;0 or Fields!Prtnorm2.Value&lt;&gt;0 or Fields!Nadb2.Value&lt;&gt;0) or
+(Fields!Rstk3.Value&lt;&gt;0 or Fields!Prtnorm3.Value&lt;&gt;0 or Fields!Nadb3.Value&lt;&gt;0) or
+(Fields!Rstk4.Value&lt;&gt;0 or Fields!Prtnorm4.Value&lt;&gt;0 or Fields!Nadb4.Value&lt;&gt;0) or
+(Fields!Rstk5.Value&lt;&gt;0 or Fields!Prtnorm5.Value&lt;&gt;0 or Fields!Nadb5.Value&lt;&gt;0) or
+(Fields!Rstk6.Value&lt;&gt;0 or Fields!Prtnorm6.Value&lt;&gt;0 or Fields!Nadb6.Value&lt;&gt;0),
+(round(Fields!Rstk1.Value*CDec(Parameters!Koefz.Value),3)+round(Fields!Prtnorm1.Value*CDec(Parameters!Koefz.Value),3)+round(Fields!Nadb1.Value*CDec(Parameters!Koefz.Value),3))+
+(round(Fields!Rstk2.Value*CDec(Parameters!Koefz.Value),3)+round(Fields!Prtnorm2.Value*CDec(Parameters!Koefz.Value),3)+round(Fields!Nadb2.Value*CDec(Parameters!Koefz.Value),3))+
+(round(Fields!Rstk3.Value*CDec(Parameters!Koefz.Value),3)+round(Fields!Prtnorm3.Value*CDec(Parameters!Koefz.Value),3)+round(Fields!Nadb3.Value*CDec(Parameters!Koefz.Value),3))+
+(round(Fields!Rstk4.Value*CDec(Parameters!Koefz.Value),3)+round(Fields!Prtnorm4.Value*CDec(Parameters!Koefz.Value),3)+round(Fields!Nadb4.Value*CDec(Parameters!Koefz.Value),3))+
+(round(Fields!Rstk5.Value*CDec(Parameters!Koefz.Value),3)+round(Fields!Prtnorm5.Value*CDec(Parameters!Koefz.Value),3)+round(Fields!Nadb5.Value*CDec(Parameters!Koefz.Value),3))+
+(round(Fields!Rstk6.Value*CDec(Parameters!Koefz.Value),3)+round(Fields!Prtnorm6.Value*CDec(Parameters!Koefz.Value),3)+round(Fields!Nadb6.Value*CDec(Parameters!Koefz.Value),3)),
+string.Empty)</Value>
+                                                    <Style />
+                                                  </TextRun>
+                                                </TextRuns>
+                                                <Style />
+                                              </Paragraph>
+                                            </Paragraphs>
+                                            <rd:DefaultName>Textbox18</rd:DefaultName>
+                                            <Top>1.2cm</Top>
+                                            <Left>21.97086cm</Left>
+                                            <Height>0.6cm</Height>
+                                            <Width>2.5cm</Width>
+                                            <ZIndex>21</ZIndex>
+                                            <Style>
+                                              <Border>
+                                                <Style>None</Style>
+                                              </Border>
+                                              <BottomBorder>
+                                                <Color>LightGrey</Color>
+                                                <Style>Solid</Style>
+                                                <Width>1pt</Width>
+                                              </BottomBorder>
+                                              <RightBorder>
+                                                <Color>LightGrey</Color>
+                                                <Style>Solid</Style>
+                                                <Width>1pt</Width>
+                                              </RightBorder>
+                                              <PaddingLeft>2pt</PaddingLeft>
+                                              <PaddingRight>2pt</PaddingRight>
+                                              <PaddingTop>2pt</PaddingTop>
+                                              <PaddingBottom>2pt</PaddingBottom>
+                                            </Style>
+                                          </Textbox>
+                                        </ReportItems>
+                                        <KeepTogether>true</KeepTogether>
+                                        <Style>
+                                          <Border>
+                                            <Style>None</Style>
+                                          </Border>
+                                        </Style>
+                                      </Rectangle>
+                                    </CellContents>
+                                  </TablixCell>
+                                </TablixCells>
+                              </TablixRow>
+                            </TablixRows>
+                          </TablixBody>
+                          <TablixColumnHierarchy>
+                            <TablixMembers>
+                              <TablixMember />
+                            </TablixMembers>
+                          </TablixColumnHierarchy>
+                          <TablixRowHierarchy>
+                            <TablixMembers>
+                              <TablixMember>
+                                <Group Name="ProfessionGroup">
+                                  <GroupExpressions>
+                                    <GroupExpression>=Fields!ProfessionId.Value</GroupExpression>
+                                  </GroupExpressions>
+                                </Group>
+                              </TablixMember>
+                            </TablixMembers>
+                          </TablixRowHierarchy>
+                          <DataSetName>SummeryOfProductInContextOfProfessionAndOfDischarge</DataSetName>
+                          <Top>1.27056cm</Top>
+                          <Left>0.00001cm</Left>
+                          <Height>1.8cm</Height>
+                          <Width>24.47086cm</Width>
+                          <Style>
+                            <Border>
+                              <Style>None</Style>
+                            </Border>
+                          </Style>
+                        </Tablix>
+                        <Textbox Name="Textbox38">
+                          <CanGrow>true</CanGrow>
+                          <KeepTogether>true</KeepTogether>
+                          <Paragraphs>
+                            <Paragraph>
+                              <TextRuns>
+                                <TextRun>
+                                  <Value>Код изделия</Value>
+                                  <Style />
+                                </TextRun>
+                              </TextRuns>
+                              <Style>
+                                <TextAlign>Right</TextAlign>
+                              </Style>
+                            </Paragraph>
+                          </Paragraphs>
+                          <rd:DefaultName>Textbox33</rd:DefaultName>
+                          <Top>0.00001cm</Top>
+                          <Left>0.00001cm</Left>
+                          <Height>0.63527cm</Height>
+                          <Width>8.38725cm</Width>
+                          <ZIndex>1</ZIndex>
+                          <Style>
+                            <Border>
+                              <Style>None</Style>
+                            </Border>
+                            <TopBorder>
+                              <Color>LightGrey</Color>
+                              <Style>Solid</Style>
+                            </TopBorder>
+                            <LeftBorder>
+                              <Color>LightGrey</Color>
+                              <Style>Solid</Style>
+                            </LeftBorder>
+                            <VerticalAlign>Middle</VerticalAlign>
+                            <PaddingLeft>2pt</PaddingLeft>
+                            <PaddingRight>2pt</PaddingRight>
+                            <PaddingTop>2pt</PaddingTop>
+                            <PaddingBottom>2pt</PaddingBottom>
+                          </Style>
+                        </Textbox>
+                        <Textbox Name="Textbox39">
+                          <CanGrow>true</CanGrow>
+                          <KeepTogether>true</KeepTogether>
+                          <Paragraphs>
+                            <Paragraph>
+                              <TextRuns>
+                                <TextRun>
+                                  <Value>=Parameters!ProductId.Value</Value>
+                                  <Style>
+                                    <FontSize>9pt</FontSize>
+                                  </Style>
+                                </TextRun>
+                              </TextRuns>
+                              <Style>
+                                <TextAlign>Right</TextAlign>
+                              </Style>
+                            </Paragraph>
+                          </Paragraphs>
+                          <rd:DefaultName>Textbox33</rd:DefaultName>
+                          <Top>0.63528cm</Top>
+                          <Left>0.00001cm</Left>
+                          <Height>0.63528cm</Height>
+                          <Width>8.38725cm</Width>
+                          <ZIndex>2</ZIndex>
+                          <Style>
+                            <Border>
+                              <Style>None</Style>
+                            </Border>
+                            <BottomBorder>
+                              <Color>LightGrey</Color>
+                              <Style>Solid</Style>
+                              <Width>1pt</Width>
+                            </BottomBorder>
+                            <LeftBorder>
+                              <Color>LightGrey</Color>
+                              <Style>Solid</Style>
+                              <Width>1pt</Width>
+                            </LeftBorder>
+                            <VerticalAlign>Middle</VerticalAlign>
+                            <PaddingLeft>2pt</PaddingLeft>
+                            <PaddingRight>2pt</PaddingRight>
+                            <PaddingTop>2pt</PaddingTop>
+                            <PaddingBottom>2pt</PaddingBottom>
+                          </Style>
+                        </Textbox>
+                        <Textbox Name="Textbox40">
+                          <CanGrow>true</CanGrow>
+                          <KeepTogether>true</KeepTogether>
+                          <Paragraphs>
+                            <Paragraph>
+                              <TextRuns>
+                                <TextRun>
+                                  <Value>Обозначение</Value>
+                                  <Style />
+                                </TextRun>
+                              </TextRuns>
+                              <Style>
+                                <TextAlign>Center</TextAlign>
+                              </Style>
+                            </Paragraph>
+                          </Paragraphs>
+                          <rd:DefaultName>Textbox33</rd:DefaultName>
+                          <Left>8.38726cm</Left>
+                          <Height>0.63528cm</Height>
+                          <Width>5.55347cm</Width>
+                          <ZIndex>3</ZIndex>
+                          <Style>
+                            <Border>
+                              <Style>None</Style>
+                            </Border>
+                            <TopBorder>
+                              <Color>LightGrey</Color>
+                              <Style>Solid</Style>
+                              <Width>1pt</Width>
+                            </TopBorder>
+                            <VerticalAlign>Middle</VerticalAlign>
+                            <PaddingLeft>2pt</PaddingLeft>
+                            <PaddingRight>2pt</PaddingRight>
+                            <PaddingTop>2pt</PaddingTop>
+                            <PaddingBottom>2pt</PaddingBottom>
+                          </Style>
+                        </Textbox>
+                        <Textbox Name="Textbox41">
+                          <CanGrow>true</CanGrow>
+                          <KeepTogether>true</KeepTogether>
+                          <Paragraphs>
+                            <Paragraph>
+                              <TextRuns>
+                                <TextRun>
+                                  <Value>=Fields!ProductMark.Value</Value>
+                                  <Style>
+                                    <FontSize>9pt</FontSize>
+                                  </Style>
+                                </TextRun>
+                              </TextRuns>
+                              <Style>
+                                <TextAlign>Center</TextAlign>
+                              </Style>
+                            </Paragraph>
+                          </Paragraphs>
+                          <rd:DefaultName>Textbox33</rd:DefaultName>
+                          <Top>0.63528cm</Top>
+                          <Left>8.38727cm</Left>
+                          <Height>0.63528cm</Height>
+                          <Width>5.55347cm</Width>
+                          <ZIndex>4</ZIndex>
+                          <Style>
+                            <Border>
+                              <Style>None</Style>
+                            </Border>
+                            <BottomBorder>
+                              <Color>LightGrey</Color>
+                              <Style>Solid</Style>
+                              <Width>1pt</Width>
+                            </BottomBorder>
+                            <VerticalAlign>Middle</VerticalAlign>
+                            <PaddingLeft>2pt</PaddingLeft>
+                            <PaddingRight>2pt</PaddingRight>
+                            <PaddingTop>2pt</PaddingTop>
+                            <PaddingBottom>2pt</PaddingBottom>
+                          </Style>
+                        </Textbox>
+                        <Textbox Name="Textbox42">
+                          <CanGrow>true</CanGrow>
+                          <KeepTogether>true</KeepTogether>
+                          <Paragraphs>
+                            <Paragraph>
+                              <TextRuns>
+                                <TextRun>
+                                  <Value>Наименование</Value>
+                                  <Style />
+                                </TextRun>
+                              </TextRuns>
+                              <Style>
+                                <TextAlign>Left</TextAlign>
+                              </Style>
+                            </Paragraph>
+                          </Paragraphs>
+                          <rd:DefaultName>Textbox33</rd:DefaultName>
+                          <Left>13.94074cm</Left>
+                          <Height>0.63528cm</Height>
+                          <Width>10.53012cm</Width>
+                          <ZIndex>5</ZIndex>
+                          <Style>
+                            <Border>
+                              <Style>None</Style>
+                            </Border>
+                            <TopBorder>
+                              <Color>LightGrey</Color>
+                              <Style>Solid</Style>
+                            </TopBorder>
+                            <RightBorder>
+                              <Color>LightGrey</Color>
+                              <Style>Solid</Style>
+                            </RightBorder>
+                            <VerticalAlign>Middle</VerticalAlign>
+                            <PaddingLeft>2pt</PaddingLeft>
+                            <PaddingRight>2pt</PaddingRight>
+                            <PaddingTop>2pt</PaddingTop>
+                            <PaddingBottom>2pt</PaddingBottom>
+                          </Style>
+                        </Textbox>
+                        <Textbox Name="Textbox43">
+                          <CanGrow>true</CanGrow>
+                          <KeepTogether>true</KeepTogether>
+                          <Paragraphs>
+                            <Paragraph>
+                              <TextRuns>
+                                <TextRun>
+                                  <Value>=Fields!ProductName.Value</Value>
+                                  <Style>
+                                    <FontSize>9pt</FontSize>
+                                  </Style>
+                                </TextRun>
+                              </TextRuns>
+                              <Style>
+                                <TextAlign>Left</TextAlign>
+                              </Style>
+                            </Paragraph>
+                          </Paragraphs>
+                          <rd:DefaultName>Textbox33</rd:DefaultName>
+                          <Top>0.63528cm</Top>
+                          <Left>13.94074cm</Left>
+                          <Height>0.63528cm</Height>
+                          <Width>10.53012cm</Width>
+                          <ZIndex>6</ZIndex>
+                          <Style>
+                            <Border>
+                              <Style>None</Style>
+                            </Border>
+                            <BottomBorder>
+                              <Color>LightGrey</Color>
+                              <Style>Solid</Style>
+                              <Width>1pt</Width>
+                            </BottomBorder>
+                            <RightBorder>
+                              <Color>LightGrey</Color>
+                              <Style>Solid</Style>
+                              <Width>1pt</Width>
+                            </RightBorder>
+                            <VerticalAlign>Middle</VerticalAlign>
+                            <PaddingLeft>2pt</PaddingLeft>
+                            <PaddingRight>2pt</PaddingRight>
+                            <PaddingTop>2pt</PaddingTop>
+                            <PaddingBottom>2pt</PaddingBottom>
+                          </Style>
+                        </Textbox>
+                        <Textbox Name="Textbox10">
+                          <CanGrow>true</CanGrow>
+                          <KeepTogether>true</KeepTogether>
+                          <Paragraphs>
+                            <Paragraph>
+                              <TextRuns>
+                                <TextRun>
+                                  <Value>Итого:</Value>
+                                  <Style />
+                                </TextRun>
+                              </TextRuns>
+                              <Style />
+                            </Paragraph>
+                          </Paragraphs>
+                          <rd:DefaultName>Textbox10</rd:DefaultName>
+                          <Top>3.10584cm</Top>
+                          <Height>0.6cm</Height>
+                          <Width>4.78833cm</Width>
+                          <ZIndex>7</ZIndex>
+                          <Style>
+                            <Border>
+                              <Style>None</Style>
+                            </Border>
+                            <PaddingLeft>2pt</PaddingLeft>
+                            <PaddingRight>2pt</PaddingRight>
+                            <PaddingTop>2pt</PaddingTop>
+                            <PaddingBottom>2pt</PaddingBottom>
+                          </Style>
+                        </Textbox>
+                        <Textbox Name="Textbox11">
+                          <CanGrow>true</CanGrow>
+                          <KeepTogether>true</KeepTogether>
+                          <Paragraphs>
+                            <Paragraph>
+                              <TextRuns>
+                                <TextRun>
+                                  <Value>=iif(Sum(Fields!Vstk1.Value,"ProductIdGroup")&lt;&gt;0 Or 
+Sum(Fields!Vstk2.Value,"ProductIdGroup")&lt;&gt;0 Or 
+Sum(Fields!Vstk3.Value,"ProductIdGroup")&lt;&gt;0 Or 
+Sum(Fields!Vstk4.Value,"ProductIdGroup")&lt;&gt;0 Or 
+Sum(Fields!Vstk5.Value,"ProductIdGroup")&lt;&gt;0 Or 
+Sum(Fields!Vstk6.Value,"ProductIdGroup")&lt;&gt;0, 
+round(Sum(Fields!Vstk1.Value,"ProductIdGroup")*CDec(Parameters!Koeft.Value),3) + 
+round(Sum(Fields!Vstk2.Value,"ProductIdGroup")*CDec(Parameters!Koeft.Value),3) + 
+round(Sum(Fields!Vstk3.Value,"ProductIdGroup")*CDec(Parameters!Koeft.Value),3) + 
+round(Sum(Fields!Vstk4.Value,"ProductIdGroup")*CDec(Parameters!Koeft.Value),3) + 
+round(Sum(Fields!Vstk5.Value,"ProductIdGroup")*CDec(Parameters!Koeft.Value),3) + 
+round(Sum(Fields!Vstk6.Value,"ProductIdGroup")*CDec(Parameters!Koeft.Value),3), string.Empty)</Value>
+                                  <Style />
+                                </TextRun>
+                              </TextRuns>
+                              <Style />
+                            </Paragraph>
+                          </Paragraphs>
+                          <rd:DefaultName>Textbox11</rd:DefaultName>
+                          <Top>3.10584cm</Top>
+                          <Left>14.36502cm</Left>
+                          <Height>0.6cm</Height>
+                          <Width>2.5cm</Width>
+                          <ZIndex>8</ZIndex>
+                          <Style>
+                            <Border>
+                              <Style>None</Style>
+                            </Border>
+                            <PaddingLeft>2pt</PaddingLeft>
+                            <PaddingRight>2pt</PaddingRight>
+                            <PaddingTop>2pt</PaddingTop>
+                            <PaddingBottom>2pt</PaddingBottom>
+                          </Style>
+                        </Textbox>
+                        <Textbox Name="Textbox16">
+                          <CanGrow>true</CanGrow>
+                          <KeepTogether>true</KeepTogether>
+                          <Paragraphs>
+                            <Paragraph>
+                              <TextRuns>
+                                <TextRun>
+                                  <Value>=iif(Sum(Fields!Prtnorm1.Value,"ProductIdGroup")&lt;&gt;0 or 
+Sum(Fields!Prtnorm2.Value,"ProductIdGroup")&lt;&gt;0 or 
+Sum(Fields!Prtnorm3.Value,"ProductIdGroup")&lt;&gt;0 or 
+Sum(Fields!Prtnorm4.Value,"ProductIdGroup")&lt;&gt;0 or 
+Sum(Fields!Prtnorm5.Value,"ProductIdGroup")&lt;&gt;0 or 
+Sum(Fields!Prtnorm6.Value,"ProductIdGroup")&lt;&gt;0, 
+round(Sum(Fields!Prtnorm1.Value,"ProductIdGroup")*CDec(Parameters!Koefz.Value),3)+
+round(Sum(Fields!Prtnorm2.Value,"ProductIdGroup")*CDec(Parameters!Koefz.Value),3)+
+round(Sum(Fields!Prtnorm3.Value,"ProductIdGroup")*CDec(Parameters!Koefz.Value),3)+
+round(Sum(Fields!Prtnorm4.Value,"ProductIdGroup")*CDec(Parameters!Koefz.Value),3)+
+round(Sum(Fields!Prtnorm5.Value,"ProductIdGroup")*CDec(Parameters!Koefz.Value),3)+
+round(Sum(Fields!Prtnorm6.Value,"ProductIdGroup")*CDec(Parameters!Koefz.Value),3), 
+string.Empty)</Value>
+                                  <Style />
+                                </TextRun>
+                              </TextRuns>
+                              <Style />
+                            </Paragraph>
+                          </Paragraphs>
+                          <rd:DefaultName>Textbox11</rd:DefaultName>
+                          <Top>3.10584cm</Top>
+                          <Left>16.86502cm</Left>
+                          <Height>0.6cm</Height>
+                          <Width>2.53528cm</Width>
+                          <ZIndex>9</ZIndex>
+                          <Style>
+                            <Border>
+                              <Style>None</Style>
+                            </Border>
+                            <PaddingLeft>2pt</PaddingLeft>
+                            <PaddingRight>2pt</PaddingRight>
+                            <PaddingTop>2pt</PaddingTop>
+                            <PaddingBottom>2pt</PaddingBottom>
+                          </Style>
+                        </Textbox>
+                        <Textbox Name="Textbox44">
+                          <CanGrow>true</CanGrow>
+                          <KeepTogether>true</KeepTogether>
+                          <Paragraphs>
+                            <Paragraph>
+                              <TextRuns>
+                                <TextRun>
+                                  <Value>=iif(Sum(Fields!Vstk1.Value,"ProductIdGroup")&lt;&gt;0 Or 
+Sum(Fields!Vstk2.Value,"ProductIdGroup")&lt;&gt;0 Or 
+Sum(Fields!Vstk3.Value,"ProductIdGroup")&lt;&gt;0 Or 
+Sum(Fields!Vstk4.Value,"ProductIdGroup")&lt;&gt;0 Or 
+Sum(Fields!Vstk5.Value,"ProductIdGroup")&lt;&gt;0 Or 
+Sum(Fields!Vstk6.Value,"ProductIdGroup")&lt;&gt;0, 
+round(Sum(Fields!Vstk1.Value,"ProductIdGroup")*CDec(Parameters!Koeft.Value),3) + 
+round(Sum(Fields!Vstk2.Value,"ProductIdGroup")*CDec(Parameters!Koeft.Value),3) + 
+round(Sum(Fields!Vstk3.Value,"ProductIdGroup")*CDec(Parameters!Koeft.Value),3) + 
+round(Sum(Fields!Vstk4.Value,"ProductIdGroup")*CDec(Parameters!Koeft.Value),3) + 
+round(Sum(Fields!Vstk5.Value,"ProductIdGroup")*CDec(Parameters!Koeft.Value),3) + 
+round(Sum(Fields!Vstk6.Value,"ProductIdGroup")*CDec(Parameters!Koeft.Value),3), 
+string.Empty)</Value>
+                                  <Style />
+                                </TextRun>
+                              </TextRuns>
+                              <Style />
+                            </Paragraph>
+                          </Paragraphs>
+                          <rd:DefaultName>Textbox11</rd:DefaultName>
+                          <Top>3.10584cm</Top>
+                          <Left>19.4003cm</Left>
+                          <Height>0.6cm</Height>
+                          <Width>2.57056cm</Width>
+                          <ZIndex>10</ZIndex>
+                          <Style>
+                            <Border>
+                              <Style>None</Style>
+                            </Border>
+                            <PaddingLeft>2pt</PaddingLeft>
+                            <PaddingRight>2pt</PaddingRight>
+                            <PaddingTop>2pt</PaddingTop>
+                            <PaddingBottom>2pt</PaddingBottom>
+                          </Style>
+                        </Textbox>
+                        <Textbox Name="Textbox45">
+                          <CanGrow>true</CanGrow>
+                          <KeepTogether>true</KeepTogether>
+                          <Paragraphs>
+                            <Paragraph>
+                              <TextRuns>
+                                <TextRun>
+                                  <Value>=iif(Sum(Fields!Vstk1.Value,"ProductIdGroup")&lt;&gt;0 Or 
+Sum(Fields!Vstk2.Value,"ProductIdGroup")&lt;&gt;0 Or 
+Sum(Fields!Vstk3.Value,"ProductIdGroup")&lt;&gt;0 Or 
+Sum(Fields!Vstk4.Value,"ProductIdGroup")&lt;&gt;0 Or 
+Sum(Fields!Vstk5.Value,"ProductIdGroup")&lt;&gt;0 Or 
+Sum(Fields!Vstk6.Value,"ProductIdGroup")&lt;&gt;0, 
+round(Sum(Fields!Vstk1.Value,"ProductIdGroup")*CDec(Parameters!Koeft.Value),3) + 
+round(Sum(Fields!Vstk2.Value,"ProductIdGroup")*CDec(Parameters!Koeft.Value),3) + 
+round(Sum(Fields!Vstk3.Value,"ProductIdGroup")*CDec(Parameters!Koeft.Value),3) + 
+round(Sum(Fields!Vstk4.Value,"ProductIdGroup")*CDec(Parameters!Koeft.Value),3) + 
+round(Sum(Fields!Vstk5.Value,"ProductIdGroup")*CDec(Parameters!Koeft.Value),3) + 
+round(Sum(Fields!Vstk6.Value,"ProductIdGroup")*CDec(Parameters!Koeft.Value),3), 
+string.Empty)</Value>
+                                  <Style />
+                                </TextRun>
+                              </TextRuns>
+                              <Style />
+                            </Paragraph>
+                          </Paragraphs>
+                          <rd:DefaultName>Textbox11</rd:DefaultName>
+                          <Top>3.10584cm</Top>
+                          <Left>21.97086cm</Left>
+                          <Height>0.6cm</Height>
+                          <Width>2.5cm</Width>
+                          <ZIndex>11</ZIndex>
+                          <Style>
+                            <Border>
+                              <Style>None</Style>
+                            </Border>
+                            <PaddingLeft>2pt</PaddingLeft>
+                            <PaddingRight>2pt</PaddingRight>
+                            <PaddingTop>2pt</PaddingTop>
+                            <PaddingBottom>2pt</PaddingBottom>
+                          </Style>
+                        </Textbox>
+                        <Textbox Name="Textbox46">
+                          <CanGrow>true</CanGrow>
+                          <KeepTogether>true</KeepTogether>
+                          <Paragraphs>
+                            <Paragraph>
+                              <TextRuns>
+                                <TextRun>
+                                  <Value>=iif(Sum(Fields!Rstk1.Value,"ProductIdGroup")&lt;&gt;0 Or 
+Sum(Fields!Rstk2.Value,"ProductIdGroup")&lt;&gt;0 Or  
+Sum(Fields!Rstk3.Value,"ProductIdGroup")&lt;&gt;0 Or   
+Sum(Fields!Rstk4.Value,"ProductIdGroup")&lt;&gt;0 Or   
+Sum(Fields!Rstk5.Value,"ProductIdGroup")&lt;&gt;0 Or   
+Sum(Fields!Rstk6.Value,"ProductIdGroup")&lt;&gt;0, 
+round(Sum(Fields!Rstk1.Value,"ProductIdGroup")*CDec(Parameters!Koefz.Value),3) + 
+round(Sum(Fields!Rstk2.Value,"ProductIdGroup")*CDec(Parameters!Koefz.Value),3) + 
+round(Sum(Fields!Rstk3.Value,"ProductIdGroup")*CDec(Parameters!Koefz.Value),3) + 
+round(Sum(Fields!Rstk4.Value,"ProductIdGroup")*CDec(Parameters!Koefz.Value),3) +
+round(Sum(Fields!Rstk5.Value,"ProductIdGroup")*CDec(Parameters!Koefz.Value),3) + 
+round(Sum(Fields!Rstk6.Value,"ProductIdGroup")*CDec(Parameters!Koefz.Value),3), string.Empty)</Value>
+                                  <Style />
+                                </TextRun>
+                              </TextRuns>
+                              <Style />
+                            </Paragraph>
+                          </Paragraphs>
+                          <rd:DefaultName>Textbox11</rd:DefaultName>
+                          <Top>3.74112cm</Top>
+                          <Left>14.36503cm</Left>
+                          <Height>0.6cm</Height>
+                          <Width>2.5cm</Width>
+                          <ZIndex>12</ZIndex>
+                          <Style>
+                            <Border>
+                              <Style>None</Style>
+                            </Border>
+                            <PaddingLeft>2pt</PaddingLeft>
+                            <PaddingRight>2pt</PaddingRight>
+                            <PaddingTop>2pt</PaddingTop>
+                            <PaddingBottom>2pt</PaddingBottom>
+                          </Style>
+                        </Textbox>
+                        <Textbox Name="Textbox47">
+                          <CanGrow>true</CanGrow>
+                          <KeepTogether>true</KeepTogether>
+                          <Paragraphs>
+                            <Paragraph>
+                              <TextRuns>
+                                <TextRun>
+                                  <Value>=iif(Sum(Fields!Nadb1.Value,"ProductIdGroup")&lt;&gt;0 Or 
+Sum(Fields!Nadb2.Value,"ProductIdGroup")&lt;&gt;0 Or   
+Sum(Fields!Nadb3.Value,"ProductIdGroup")&lt;&gt;0 Or   
+Sum(Fields!Nadb4.Value,"ProductIdGroup")&lt;&gt;0 Or   
+Sum(Fields!Nadb5.Value,"ProductIdGroup")&lt;&gt;0 Or   
+Sum(Fields!Nadb6.Value,"ProductIdGroup"),
+round(Sum(Fields!Nadb1.Value,"ProductIdGroup")*CDec(Parameters!Koefz.Value),3) + 
+round(Sum(Fields!Nadb2.Value,"ProductIdGroup")*CDec(Parameters!Koefz.Value),3) +
+round(Sum(Fields!Nadb3.Value,"ProductIdGroup")*CDec(Parameters!Koefz.Value),3) +
+round(Sum(Fields!Nadb4.Value,"ProductIdGroup")*CDec(Parameters!Koefz.Value),3) +
+round(Sum(Fields!Nadb5.Value,"ProductIdGroup")*CDec(Parameters!Koefz.Value),3) +
+round(Sum(Fields!Nadb6.Value,"ProductIdGroup")*CDec(Parameters!Koefz.Value),3),string.Empty)</Value>
+                                  <Style />
+                                </TextRun>
+                              </TextRuns>
+                              <Style />
+                            </Paragraph>
+                          </Paragraphs>
+                          <rd:DefaultName>Textbox11</rd:DefaultName>
+                          <Top>3.74112cm</Top>
+                          <Left>16.86503cm</Left>
+                          <Height>0.6cm</Height>
+                          <Width>2.53528cm</Width>
+                          <ZIndex>13</ZIndex>
+                          <Style>
+                            <Border>
+                              <Style>None</Style>
+                            </Border>
+                            <PaddingLeft>2pt</PaddingLeft>
+                            <PaddingRight>2pt</PaddingRight>
+                            <PaddingTop>2pt</PaddingTop>
+                            <PaddingBottom>2pt</PaddingBottom>
+                          </Style>
+                        </Textbox>
+                        <Textbox Name="Textbox48">
+                          <CanGrow>true</CanGrow>
+                          <KeepTogether>true</KeepTogether>
+                          <Paragraphs>
+                            <Paragraph>
+                              <TextRuns>
+                                <TextRun>
+                                  <Value>=iif((Sum(Fields!Rstk1.Value,"ProductIdGroup")&lt;&gt;0 or Sum(Fields!Prtnorm1.Value,"ProductIdGroup")&lt;&gt;0 or Sum(Fields!Nadb1.Value,"ProductIdGroup")&lt;&gt;0) Or   
+(Sum(Fields!Rstk2.Value,"ProductIdGroup")&lt;&gt;0 or Sum(Fields!Prtnorm2.Value,"ProductIdGroup")&lt;&gt;0 or Sum(Fields!Nadb2.Value,"ProductIdGroup")&lt;&gt;0) Or  
+(Sum(Fields!Rstk3.Value,"ProductIdGroup")&lt;&gt;0 or Sum(Fields!Prtnorm3.Value,"ProductIdGroup")&lt;&gt;0 or Sum(Fields!Nadb3.Value,"ProductIdGroup")&lt;&gt;0) Or  
+(Sum(Fields!Rstk4.Value,"ProductIdGroup")&lt;&gt;0 or Sum(Fields!Prtnorm4.Value,"ProductIdGroup")&lt;&gt;0 or Sum(Fields!Nadb4.Value,"ProductIdGroup")&lt;&gt;0) Or  
+(Sum(Fields!Rstk5.Value,"ProductIdGroup")&lt;&gt;0 or Sum(Fields!Prtnorm5.Value,"ProductIdGroup")&lt;&gt;0 or Sum(Fields!Nadb5.Value,"ProductIdGroup")&lt;&gt;0) Or  
+(Sum(Fields!Rstk6.Value,"ProductIdGroup")&lt;&gt;0 or Sum(Fields!Prtnorm6.Value,"ProductIdGroup")&lt;&gt;0 or Sum(Fields!Nadb6.Value,"ProductIdGroup")&lt;&gt;0),
+(round(Sum(Fields!Rstk1.Value,"ProductIdGroup")*CDec(Parameters!Koefz.Value),3)+round(Sum(Fields!Prtnorm1.Value,"ProductIdGroup")*CDec(Parameters!Koefz.Value),3)+round(Sum(Fields!Nadb1.Value,"ProductIdGroup")*CDec(Parameters!Koefz.Value),3))+
+(round(Sum(Fields!Rstk2.Value,"ProductIdGroup")*CDec(Parameters!Koefz.Value),3)+round(Sum(Fields!Prtnorm2.Value,"ProductIdGroup")*CDec(Parameters!Koefz.Value),3)+round(Sum(Fields!Nadb2.Value,"ProductIdGroup")*CDec(Parameters!Koefz.Value),3))+
+(round(Sum(Fields!Rstk3.Value,"ProductIdGroup")*CDec(Parameters!Koefz.Value),3)+round(Sum(Fields!Prtnorm3.Value,"ProductIdGroup")*CDec(Parameters!Koefz.Value),3)+round(Sum(Fields!Nadb3.Value,"ProductIdGroup")*CDec(Parameters!Koefz.Value),3))+
+(round(Sum(Fields!Rstk4.Value,"ProductIdGroup")*CDec(Parameters!Koefz.Value),3)+round(Sum(Fields!Prtnorm4.Value,"ProductIdGroup")*CDec(Parameters!Koefz.Value),3)+round(Sum(Fields!Nadb4.Value,"ProductIdGroup")*CDec(Parameters!Koefz.Value),3))+
+(round(Sum(Fields!Rstk5.Value,"ProductIdGroup")*CDec(Parameters!Koefz.Value),3)+round(Sum(Fields!Prtnorm5.Value,"ProductIdGroup")*CDec(Parameters!Koefz.Value),3)+round(Sum(Fields!Nadb5.Value,"ProductIdGroup")*CDec(Parameters!Koefz.Value),3))+
+(round(Sum(Fields!Rstk6.Value,"ProductIdGroup")*CDec(Parameters!Koefz.Value),3)+round(Sum(Fields!Prtnorm6.Value,"ProductIdGroup")*CDec(Parameters!Koefz.Value),3)+round(Sum(Fields!Nadb6.Value,"ProductIdGroup")*CDec(Parameters!Koefz.Value),3)),
+string.Empty)</Value>
+                                  <Style />
+                                </TextRun>
+                              </TextRuns>
+                              <Style />
+                            </Paragraph>
+                          </Paragraphs>
+                          <rd:DefaultName>Textbox11</rd:DefaultName>
+                          <Top>3.74112cm</Top>
+                          <Left>19.40031cm</Left>
+                          <Height>0.6cm</Height>
+                          <Width>2.57056cm</Width>
+                          <ZIndex>14</ZIndex>
+                          <Style>
+                            <Border>
+                              <Style>None</Style>
+                            </Border>
+                            <PaddingLeft>2pt</PaddingLeft>
+                            <PaddingRight>2pt</PaddingRight>
+                            <PaddingTop>2pt</PaddingTop>
+                            <PaddingBottom>2pt</PaddingBottom>
+                          </Style>
+                        </Textbox>
+                        <Textbox Name="Textbox49">
+                          <CanGrow>true</CanGrow>
+                          <KeepTogether>true</KeepTogether>
+                          <Paragraphs>
+                            <Paragraph>
+                              <TextRuns>
+                                <TextRun>
+                                  <Value>=iif((Sum(Fields!Rstk1.Value,"ProductIdGroup")&lt;&gt;0 or Sum(Fields!Prtnorm1.Value,"ProductIdGroup")&lt;&gt;0 or Sum(Fields!Nadb1.Value,"ProductIdGroup")&lt;&gt;0) or 
+(Sum(Fields!Rstk2.Value,"ProductIdGroup")&lt;&gt;0 or Sum(Fields!Prtnorm2.Value,"ProductIdGroup")&lt;&gt;0 or Sum(Fields!Nadb2.Value,"ProductIdGroup")&lt;&gt;0) or
+(Sum(Fields!Rstk3.Value,"ProductIdGroup")&lt;&gt;0 or Sum(Fields!Prtnorm3.Value,"ProductIdGroup")&lt;&gt;0 or Sum(Fields!Nadb3.Value,"ProductIdGroup")&lt;&gt;0) or
+(Sum(Fields!Rstk4.Value,"ProductIdGroup")&lt;&gt;0 or Sum(Fields!Prtnorm4.Value,"ProductIdGroup")&lt;&gt;0 or Sum(Fields!Nadb4.Value,"ProductIdGroup")&lt;&gt;0) or
+(Sum(Fields!Rstk5.Value,"ProductIdGroup")&lt;&gt;0 or Sum(Fields!Prtnorm5.Value,"ProductIdGroup")&lt;&gt;0 or Sum(Fields!Nadb5.Value,"ProductIdGroup")&lt;&gt;0) or
+(Sum(Fields!Rstk6.Value,"ProductIdGroup")&lt;&gt;0 or Sum(Fields!Prtnorm6.Value,"ProductIdGroup")&lt;&gt;0 or Sum(Fields!Nadb6.Value,"ProductIdGroup")&lt;&gt;0),
+(round(Sum(Fields!Rstk1.Value,"ProductIdGroup")*CDec(Parameters!Koefz.Value),3)+round(Sum(Fields!Prtnorm1.Value,"ProductIdGroup")*CDec(Parameters!Koefz.Value),3)+round(Sum(Fields!Nadb1.Value,"ProductIdGroup")*CDec(Parameters!Koefz.Value),3))+
+(round(Sum(Fields!Rstk2.Value,"ProductIdGroup")*CDec(Parameters!Koefz.Value),3)+round(Sum(Fields!Prtnorm2.Value,"ProductIdGroup")*CDec(Parameters!Koefz.Value),3)+round(Sum(Fields!Nadb2.Value,"ProductIdGroup")*CDec(Parameters!Koefz.Value),3))+
+(round(Sum(Fields!Rstk3.Value,"ProductIdGroup")*CDec(Parameters!Koefz.Value),3)+round(Sum(Fields!Prtnorm3.Value,"ProductIdGroup")*CDec(Parameters!Koefz.Value),3)+round(Sum(Fields!Nadb3.Value,"ProductIdGroup")*CDec(Parameters!Koefz.Value),3))+
+(round(Sum(Fields!Rstk4.Value,"ProductIdGroup")*CDec(Parameters!Koefz.Value),3)+round(Sum(Fields!Prtnorm4.Value,"ProductIdGroup")*CDec(Parameters!Koefz.Value),3)+round(Sum(Fields!Nadb4.Value,"ProductIdGroup")*CDec(Parameters!Koefz.Value),3))+
+(round(Sum(Fields!Rstk5.Value,"ProductIdGroup")*CDec(Parameters!Koefz.Value),3)+round(Sum(Fields!Prtnorm5.Value,"ProductIdGroup")*CDec(Parameters!Koefz.Value),3)+round(Sum(Fields!Nadb5.Value,"ProductIdGroup")*CDec(Parameters!Koefz.Value),3))+
+(round(Sum(Fields!Rstk6.Value,"ProductIdGroup")*CDec(Parameters!Koefz.Value),3)+round(Sum(Fields!Prtnorm6.Value,"ProductIdGroup")*CDec(Parameters!Koefz.Value),3)+round(Sum(Fields!Nadb6.Value,"ProductIdGroup")*CDec(Parameters!Koefz.Value),3)),
+string.Empty)</Value>
+                                  <Style />
+                                </TextRun>
+                              </TextRuns>
+                              <Style />
+                            </Paragraph>
+                          </Paragraphs>
+                          <rd:DefaultName>Textbox11</rd:DefaultName>
+                          <Top>3.74112cm</Top>
+                          <Left>21.97087cm</Left>
+                          <Height>0.6cm</Height>
+                          <Width>2.5cm</Width>
+                          <ZIndex>15</ZIndex>
+                          <Style>
+                            <Border>
+                              <Style>None</Style>
+                            </Border>
+                            <PaddingLeft>2pt</PaddingLeft>
+                            <PaddingRight>2pt</PaddingRight>
+                            <PaddingTop>2pt</PaddingTop>
+                            <PaddingBottom>2pt</PaddingBottom>
+                          </Style>
+                        </Textbox>
+                      </ReportItems>
+                      <KeepTogether>true</KeepTogether>
+                      <Style>
+                        <Border>
+                          <Style>None</Style>
+                        </Border>
+                      </Style>
+                    </Rectangle>
+                  </CellContents>
+                </TablixCell>
+              </TablixCells>
+            </TablixRow>
+          </TablixRows>
+        </TablixBody>
+        <TablixColumnHierarchy>
+          <TablixMembers>
+            <TablixMember />
+          </TablixMembers>
+        </TablixColumnHierarchy>
+        <TablixRowHierarchy>
+          <TablixMembers>
+            <TablixMember>
+              <Group Name="ProductIdGroup">
+                <GroupExpressions>
+                  <GroupExpression>=Fields!ProductId.Value</GroupExpression>
+                </GroupExpressions>
+              </Group>
+            </TablixMember>
+          </TablixMembers>
+        </TablixRowHierarchy>
+        <DataSetName>SummeryOfProductInContextOfProfessionAndOfDischarge</DataSetName>
+        <Height>4.34112cm</Height>
+        <Width>24.47086cm</Width>
+        <Style>
+          <Border>
+            <Style>None</Style>
+          </Border>
+        </Style>
+      </Tablix>
+    </ReportItems>
+    <Height>1.7091in</Height>
+    <Style />
+  </Body>
+  <Width>9.6342in</Width>
+  <Page>
+    <PageHeader>
+      <Height>2.53999cm</Height>
+      <PrintOnFirstPage>true</PrintOnFirstPage>
+      <PrintOnLastPage>true</PrintOnLastPage>
+      <ReportItems>
+        <Textbox Name="Textbox1">
+          <CanGrow>true</CanGrow>
+          <KeepTogether>true</KeepTogether>
+          <Paragraphs>
+            <Paragraph>
+              <TextRuns>
+                <TextRun>
+                  <Value>="Лист " &amp; Globals!PageNumber</Value>
+                  <Style />
+                </TextRun>
+              </TextRuns>
+              <Style>
+                <TextAlign>Right</TextAlign>
+              </Style>
+            </Paragraph>
+          </Paragraphs>
+          <rd:DefaultName>Textbox1</rd:DefaultName>
+          <Left>20.66968cm</Left>
+          <Height>0.6cm</Height>
+          <Width>3.80118cm</Width>
+          <Style>
+            <Border>
+              <Style>None</Style>
+            </Border>
+            <TopBorder>
+              <Color>LightGrey</Color>
+              <Style>Solid</Style>
+              <Width>1pt</Width>
+            </TopBorder>
+            <BottomBorder>
+              <Color>LightGrey</Color>
+              <Style>Solid</Style>
+              <Width>1pt</Width>
+            </BottomBorder>
+            <RightBorder>
+              <Color>LightGrey</Color>
+              <Style>Solid</Style>
+              <Width>1pt</Width>
+            </RightBorder>
+            <PaddingLeft>2pt</PaddingLeft>
+            <PaddingRight>2pt</PaddingRight>
+            <PaddingTop>2pt</PaddingTop>
+            <PaddingBottom>2pt</PaddingBottom>
+          </Style>
+        </Textbox>
+        <Textbox Name="Textbox2">
+          <CanGrow>true</CanGrow>
+          <KeepTogether>true</KeepTogether>
+          <Paragraphs>
+            <Paragraph>
+              <TextRuns>
+                <TextRun>
+                  <Value>Суммарная трудоёмкость и зарплата по изделию в разрезе разрядов и профессий на </Value>
+                  <Style />
+                </TextRun>
+                <TextRun>
+                  <Value>=Parameters!Date.Value</Value>
+                  <Style />
+                </TextRun>
+                <TextRun>
+                  <Value> г.</Value>
+                  <Style />
+                </TextRun>
+              </TextRuns>
+              <Style>
+                <TextAlign>Center</TextAlign>
+              </Style>
+            </Paragraph>
+          </Paragraphs>
+          <rd:DefaultName>Textbox2</rd:DefaultName>
+          <Height>0.6cm</Height>
+          <Width>20.66968cm</Width>
+          <ZIndex>1</ZIndex>
+          <Style>
+            <Border>
+              <Color>LightGrey</Color>
+              <Style>Solid</Style>
+            </Border>
+            <RightBorder>
+              <Style>None</Style>
+            </RightBorder>
+            <VerticalAlign>Middle</VerticalAlign>
+            <PaddingLeft>2pt</PaddingLeft>
+            <PaddingRight>2pt</PaddingRight>
+            <PaddingTop>2pt</PaddingTop>
+            <PaddingBottom>2pt</PaddingBottom>
+          </Style>
+        </Textbox>
+        <Textbox Name="Textbox12">
+          <CanGrow>true</CanGrow>
+          <KeepTogether>true</KeepTogether>
+          <Paragraphs>
+            <Paragraph>
+              <TextRuns>
+                <TextRun>
+                  <Value>Сумм. тр-ть и зарплата (чистая) час/руб.</Value>
+                  <Style />
+                </TextRun>
+              </TextRuns>
+              <Style>
+                <TextAlign>Center</TextAlign>
+              </Style>
+            </Paragraph>
+          </Paragraphs>
+          <rd:DefaultName>Textbox4</rd:DefaultName>
+          <Top>0.59999cm</Top>
+          <Left>14.36502cm</Left>
+          <Height>1.93999cm</Height>
+          <Width>2.5cm</Width>
+          <ZIndex>2</ZIndex>
+          <Style>
+            <Border>
+              <Style>None</Style>
+            </Border>
+            <BottomBorder>
+              <Color>LightGrey</Color>
+              <Style>Solid</Style>
+            </BottomBorder>
+            <LeftBorder>
+              <Color>LightGrey</Color>
+              <Style>Solid</Style>
+              <Width>1pt</Width>
+            </LeftBorder>
+            <RightBorder>
+              <Color>LightGrey</Color>
+              <Style>Solid</Style>
+            </RightBorder>
+            <VerticalAlign>Middle</VerticalAlign>
+            <PaddingLeft>2pt</PaddingLeft>
+            <PaddingRight>2pt</PaddingRight>
+            <PaddingTop>2pt</PaddingTop>
+            <PaddingBottom>2pt</PaddingBottom>
+          </Style>
+        </Textbox>
+        <Textbox Name="Textbox13">
+          <CanGrow>true</CanGrow>
+          <KeepTogether>true</KeepTogether>
+          <Paragraphs>
+            <Paragraph>
+              <TextRuns>
+                <TextRun>
+                  <Value>Премия за </Value>
+                  <Style />
+                </TextRun>
+              </TextRuns>
+              <Style>
+                <TextAlign>Center</TextAlign>
+              </Style>
+            </Paragraph>
+            <Paragraph>
+              <TextRuns>
+                <TextRun>
+                  <Value>Т О Н</Value>
+                  <Style />
+                </TextRun>
+              </TextRuns>
+              <Style>
+                <TextAlign>Center</TextAlign>
+              </Style>
+            </Paragraph>
+            <Paragraph>
+              <TextRuns>
+                <TextRun>
+                  <Value>Напряж. нор.</Value>
+                  <Style />
+                </TextRun>
+              </TextRuns>
+              <Style>
+                <TextAlign>Center</TextAlign>
+              </Style>
+            </Paragraph>
+          </Paragraphs>
+          <rd:DefaultName>Textbox4</rd:DefaultName>
+          <Top>0.59999cm</Top>
+          <Left>16.86502cm</Left>
+          <Height>1.93999cm</Height>
+          <Width>2.53528cm</Width>
+          <ZIndex>3</ZIndex>
+          <Style>
+            <Border>
+              <Style>None</Style>
+            </Border>
+            <BottomBorder>
+              <Color>LightGrey</Color>
+              <Style>Solid</Style>
+              <Width>1pt</Width>
+            </BottomBorder>
+            <RightBorder>
+              <Color>LightGrey</Color>
+              <Style>Solid</Style>
+              <Width>1pt</Width>
+            </RightBorder>
+            <VerticalAlign>Middle</VerticalAlign>
+            <PaddingLeft>2pt</PaddingLeft>
+            <PaddingRight>2pt</PaddingRight>
+            <PaddingTop>2pt</PaddingTop>
+            <PaddingBottom>2pt</PaddingBottom>
+          </Style>
+        </Textbox>
+        <Textbox Name="Textbox14">
+          <CanGrow>true</CanGrow>
+          <KeepTogether>true</KeepTogether>
+          <Paragraphs>
+            <Paragraph>
+              <TextRuns>
+                <TextRun>
+                  <Value>Сумм. тр-ть и зарплата с премиями час/руб.</Value>
+                  <Style />
+                </TextRun>
+              </TextRuns>
+              <Style>
+                <TextAlign>Center</TextAlign>
+              </Style>
+            </Paragraph>
+          </Paragraphs>
+          <rd:DefaultName>Textbox4</rd:DefaultName>
+          <Top>0.59999cm</Top>
+          <Left>19.4003cm</Left>
+          <Height>1.93999cm</Height>
+          <Width>2.57056cm</Width>
+          <ZIndex>4</ZIndex>
+          <Style>
+            <Border>
+              <Style>None</Style>
+            </Border>
+            <BottomBorder>
+              <Color>LightGrey</Color>
+              <Style>Solid</Style>
+              <Width>1pt</Width>
+            </BottomBorder>
+            <RightBorder>
+              <Color>LightGrey</Color>
+              <Style>Solid</Style>
+              <Width>1pt</Width>
+            </RightBorder>
+            <VerticalAlign>Middle</VerticalAlign>
+            <PaddingLeft>2pt</PaddingLeft>
+            <PaddingRight>2pt</PaddingRight>
+            <PaddingTop>2pt</PaddingTop>
+            <PaddingBottom>2pt</PaddingBottom>
+          </Style>
+        </Textbox>
+        <Textbox Name="Textbox15">
+          <CanGrow>true</CanGrow>
+          <KeepTogether>true</KeepTogether>
+          <Paragraphs>
+            <Paragraph>
+              <TextRuns>
+                <TextRun>
+                  <Value>Сумм. тр-ть и зарплата по   Т О Н</Value>
+                  <Style />
+                </TextRun>
+              </TextRuns>
+              <Style>
+                <TextAlign>Center</TextAlign>
+              </Style>
+            </Paragraph>
+            <Paragraph>
+              <TextRuns>
+                <TextRun>
+                  <Value> час/руб.</Value>
+                  <Style />
+                </TextRun>
+              </TextRuns>
+              <Style>
+                <TextAlign>Center</TextAlign>
+              </Style>
+            </Paragraph>
+          </Paragraphs>
+          <rd:DefaultName>Textbox4</rd:DefaultName>
+          <Top>0.59999cm</Top>
+          <Left>21.97086cm</Left>
+          <Height>1.93999cm</Height>
+          <Width>2.5cm</Width>
+          <ZIndex>5</ZIndex>
+          <Style>
+            <Border>
+              <Style>None</Style>
+            </Border>
+            <BottomBorder>
+              <Color>LightGrey</Color>
+              <Style>Solid</Style>
+              <Width>1pt</Width>
+            </BottomBorder>
+            <RightBorder>
+              <Color>LightGrey</Color>
+              <Style>Solid</Style>
+              <Width>1pt</Width>
+            </RightBorder>
+            <VerticalAlign>Middle</VerticalAlign>
+            <PaddingLeft>2pt</PaddingLeft>
+            <PaddingRight>2pt</PaddingRight>
+            <PaddingTop>2pt</PaddingTop>
+            <PaddingBottom>2pt</PaddingBottom>
+          </Style>
+        </Textbox>
+        <Textbox Name="Textbox3">
+          <CanGrow>true</CanGrow>
+          <KeepTogether>true</KeepTogether>
+          <Paragraphs>
+            <Paragraph>
+              <TextRuns>
+                <TextRun>
+                  <Value>Трудоёмкость и зарплата (чистая) по разрядам (час / руб)</Value>
+                  <Style />
+                </TextRun>
+              </TextRuns>
+              <Style>
+                <TextAlign>Center</TextAlign>
+              </Style>
+            </Paragraph>
+          </Paragraphs>
+          <rd:DefaultName>Textbox3</rd:DefaultName>
+          <Top>0.59999cm</Top>
+          <Height>1.04979cm</Height>
+          <Width>14.36502cm</Width>
+          <ZIndex>6</ZIndex>
+          <Style>
+            <Border>
+              <Style>None</Style>
+            </Border>
+            <BottomBorder>
+              <Color>LightGrey</Color>
+              <Style>Solid</Style>
+            </BottomBorder>
+            <LeftBorder>
+              <Color>LightGrey</Color>
+              <Style>Solid</Style>
+            </LeftBorder>
+            <RightBorder>
+              <Color>LightGrey</Color>
+              <Style>Solid</Style>
+            </RightBorder>
+            <VerticalAlign>Middle</VerticalAlign>
+            <PaddingLeft>2pt</PaddingLeft>
+            <PaddingRight>2pt</PaddingRight>
+            <PaddingTop>2pt</PaddingTop>
+            <PaddingBottom>2pt</PaddingBottom>
+          </Style>
+        </Textbox>
+        <Textbox Name="Textbox9">
+          <CanGrow>true</CanGrow>
+          <KeepTogether>true</KeepTogether>
+          <Paragraphs>
+            <Paragraph>
+              <TextRuns>
+                <TextRun>
+                  <Value>6</Value>
+                  <Style />
+                </TextRun>
+              </TextRuns>
+              <Style>
+                <TextAlign>Center</TextAlign>
+              </Style>
+            </Paragraph>
+          </Paragraphs>
+          <rd:DefaultName>Textbox4</rd:DefaultName>
+          <Top>1.64978cm</Top>
+          <Left>11.97085cm</Left>
+          <Height>0.8902cm</Height>
+          <Width>2.39417cm</Width>
+          <ZIndex>7</ZIndex>
+          <Style>
+            <Border>
+              <Style>None</Style>
+            </Border>
+            <BottomBorder>
+              <Color>LightGrey</Color>
+              <Style>Solid</Style>
+              <Width>1pt</Width>
+            </BottomBorder>
+            <LeftBorder>
+              <Color>LightGrey</Color>
+              <Style>Solid</Style>
+              <Width>1pt</Width>
+            </LeftBorder>
+            <RightBorder>
+              <Color>LightGrey</Color>
+              <Style>Solid</Style>
+              <Width>1pt</Width>
+            </RightBorder>
+            <VerticalAlign>Middle</VerticalAlign>
+            <PaddingLeft>2pt</PaddingLeft>
+            <PaddingRight>2pt</PaddingRight>
+            <PaddingTop>2pt</PaddingTop>
+            <PaddingBottom>2pt</PaddingBottom>
+          </Style>
+        </Textbox>
+        <Textbox Name="Textbox8">
+          <CanGrow>true</CanGrow>
+          <KeepTogether>true</KeepTogether>
+          <Paragraphs>
+            <Paragraph>
+              <TextRuns>
+                <TextRun>
+                  <Value>5</Value>
+                  <Style />
+                </TextRun>
+              </TextRuns>
+              <Style>
+                <TextAlign>Center</TextAlign>
+              </Style>
+            </Paragraph>
+          </Paragraphs>
+          <rd:DefaultName>Textbox4</rd:DefaultName>
+          <Top>1.64978cm</Top>
+          <Left>9.57668cm</Left>
+          <Height>0.8902cm</Height>
+          <Width>2.39417cm</Width>
+          <ZIndex>8</ZIndex>
+          <Style>
+            <Border>
+              <Style>None</Style>
+            </Border>
+            <BottomBorder>
+              <Color>LightGrey</Color>
+              <Style>Solid</Style>
+              <Width>1pt</Width>
+            </BottomBorder>
+            <LeftBorder>
+              <Color>LightGrey</Color>
+              <Style>Solid</Style>
+              <Width>1pt</Width>
+            </LeftBorder>
+            <VerticalAlign>Middle</VerticalAlign>
+            <PaddingLeft>2pt</PaddingLeft>
+            <PaddingRight>2pt</PaddingRight>
+            <PaddingTop>2pt</PaddingTop>
+            <PaddingBottom>2pt</PaddingBottom>
+          </Style>
+        </Textbox>
+        <Textbox Name="Textbox7">
+          <CanGrow>true</CanGrow>
+          <KeepTogether>true</KeepTogether>
+          <Paragraphs>
+            <Paragraph>
+              <TextRuns>
+                <TextRun>
+                  <Value>4</Value>
+                  <Style />
+                </TextRun>
+              </TextRuns>
+              <Style>
+                <TextAlign>Center</TextAlign>
+              </Style>
+            </Paragraph>
+          </Paragraphs>
+          <rd:DefaultName>Textbox4</rd:DefaultName>
+          <Top>1.64978cm</Top>
+          <Left>7.14723cm</Left>
+          <Height>0.8902cm</Height>
+          <Width>2.42945cm</Width>
+          <ZIndex>9</ZIndex>
+          <Style>
+            <Border>
+              <Style>None</Style>
+            </Border>
+            <BottomBorder>
+              <Color>LightGrey</Color>
+              <Style>Solid</Style>
+              <Width>1pt</Width>
+            </BottomBorder>
+            <LeftBorder>
+              <Color>LightGrey</Color>
+              <Style>Solid</Style>
+              <Width>1pt</Width>
+            </LeftBorder>
+            <VerticalAlign>Middle</VerticalAlign>
+            <PaddingLeft>2pt</PaddingLeft>
+            <PaddingRight>2pt</PaddingRight>
+            <PaddingTop>2pt</PaddingTop>
+            <PaddingBottom>2pt</PaddingBottom>
+          </Style>
+        </Textbox>
+        <Textbox Name="Textbox6">
+          <CanGrow>true</CanGrow>
+          <KeepTogether>true</KeepTogether>
+          <Paragraphs>
+            <Paragraph>
+              <TextRuns>
+                <TextRun>
+                  <Value>3</Value>
+                  <Style />
+                </TextRun>
+              </TextRuns>
+              <Style>
+                <TextAlign>Center</TextAlign>
+              </Style>
+            </Paragraph>
+          </Paragraphs>
+          <rd:DefaultName>Textbox4</rd:DefaultName>
+          <Top>1.64978cm</Top>
+          <Left>4.78834cm</Left>
+          <Height>0.89021cm</Height>
+          <Width>2.35889cm</Width>
+          <ZIndex>10</ZIndex>
+          <Style>
+            <Border>
+              <Style>None</Style>
+            </Border>
+            <BottomBorder>
+              <Color>LightGrey</Color>
+              <Style>Solid</Style>
+              <Width>1pt</Width>
+            </BottomBorder>
+            <LeftBorder>
+              <Color>LightGrey</Color>
+              <Style>Solid</Style>
+              <Width>1pt</Width>
+            </LeftBorder>
+            <VerticalAlign>Middle</VerticalAlign>
+            <PaddingLeft>2pt</PaddingLeft>
+            <PaddingRight>2pt</PaddingRight>
+            <PaddingTop>2pt</PaddingTop>
+            <PaddingBottom>2pt</PaddingBottom>
+          </Style>
+        </Textbox>
+        <Textbox Name="Textbox5">
+          <CanGrow>true</CanGrow>
+          <KeepTogether>true</KeepTogether>
+          <Paragraphs>
+            <Paragraph>
+              <TextRuns>
+                <TextRun>
+                  <Value>2</Value>
+                  <Style />
+                </TextRun>
+              </TextRuns>
+              <Style>
+                <TextAlign>Center</TextAlign>
+              </Style>
+            </Paragraph>
+          </Paragraphs>
+          <rd:DefaultName>Textbox4</rd:DefaultName>
+          <Top>1.64978cm</Top>
+          <Left>2.32362cm</Left>
+          <Height>0.8902cm</Height>
+          <Width>2.46472cm</Width>
+          <ZIndex>11</ZIndex>
+          <Style>
+            <Border>
+              <Style>None</Style>
+            </Border>
+            <BottomBorder>
+              <Color>LightGrey</Color>
+              <Style>Solid</Style>
+              <Width>1pt</Width>
+            </BottomBorder>
+            <LeftBorder>
+              <Color>LightGrey</Color>
+              <Style>Solid</Style>
+              <Width>1pt</Width>
+            </LeftBorder>
+            <VerticalAlign>Middle</VerticalAlign>
+            <PaddingLeft>2pt</PaddingLeft>
+            <PaddingRight>2pt</PaddingRight>
+            <PaddingTop>2pt</PaddingTop>
+            <PaddingBottom>2pt</PaddingBottom>
+          </Style>
+        </Textbox>
+        <Textbox Name="Textbox4">
+          <CanGrow>true</CanGrow>
+          <KeepTogether>true</KeepTogether>
+          <Paragraphs>
+            <Paragraph>
+              <TextRuns>
+                <TextRun>
+                  <Value>1</Value>
+                  <Style />
+                </TextRun>
+              </TextRuns>
+              <Style>
+                <TextAlign>Center</TextAlign>
+              </Style>
+            </Paragraph>
+          </Paragraphs>
+          <rd:DefaultName>Textbox4</rd:DefaultName>
+          <Top>1.64978cm</Top>
+          <Height>0.89021cm</Height>
+          <Width>2.32362cm</Width>
+          <ZIndex>12</ZIndex>
+          <Style>
+            <Border>
+              <Style>None</Style>
+            </Border>
+            <BottomBorder>
+              <Color>LightGrey</Color>
+              <Style>Solid</Style>
+            </BottomBorder>
+            <LeftBorder>
+              <Color>LightGrey</Color>
+              <Style>Solid</Style>
+            </LeftBorder>
+            <VerticalAlign>Middle</VerticalAlign>
+            <PaddingLeft>2pt</PaddingLeft>
+            <PaddingRight>2pt</PaddingRight>
+            <PaddingTop>2pt</PaddingTop>
+            <PaddingBottom>2pt</PaddingBottom>
+          </Style>
+        </Textbox>
+      </ReportItems>
+      <Style>
+        <Border>
+          <Style>None</Style>
+        </Border>
+      </Style>
+    </PageHeader>
+    <PageHeight>21cm</PageHeight>
+    <PageWidth>29.7cm</PageWidth>
+    <LeftMargin>1cm</LeftMargin>
+    <RightMargin>1cm</RightMargin>
+    <TopMargin>1cm</TopMargin>
+    <BottomMargin>0.5cm</BottomMargin>
+    <ColumnSpacing>0.13cm</ColumnSpacing>
+    <Style />
+  </Page>
+  <AutoRefresh>0</AutoRefresh>
+  <DataSources>
+    <DataSource Name="LaborNormsEntitiesReports">
+      <ConnectionProperties>
+        <DataProvider>System.Data.DataSet</DataProvider>
+        <ConnectString>/* Local Connection */</ConnectString>
+      </ConnectionProperties>
+      <rd:DataSourceID>7330adfa-8933-4e22-848b-4a6388ce67c8</rd:DataSourceID>
+    </DataSource>
+  </DataSources>
+  <DataSets>
+    <DataSet Name="SummeryOfProductInContextOfProfessionAndOfDischarge">
+      <Query>
+        <DataSourceName>LaborNormsEntitiesReports</DataSourceName>
+        <CommandText>/* Local Query */</CommandText>
+      </Query>
+      <Fields>
+        <Field Name="Nadb1">
+          <DataField>Nadb1</DataField>
+          <rd:TypeName>System.Decimal</rd:TypeName>
+        </Field>
+        <Field Name="Nadb2">
+          <DataField>Nadb2</DataField>
+          <rd:TypeName>System.Decimal</rd:TypeName>
+        </Field>
+        <Field Name="Nadb3">
+          <DataField>Nadb3</DataField>
+          <rd:TypeName>System.Decimal</rd:TypeName>
+        </Field>
+        <Field Name="Nadb4">
+          <DataField>Nadb4</DataField>
+          <rd:TypeName>System.Decimal</rd:TypeName>
+        </Field>
+        <Field Name="Nadb5">
+          <DataField>Nadb5</DataField>
+          <rd:TypeName>System.Decimal</rd:TypeName>
+        </Field>
+        <Field Name="Nadb6">
+          <DataField>Nadb6</DataField>
+          <rd:TypeName>System.Decimal</rd:TypeName>
+        </Field>
+        <Field Name="ProductId">
+          <DataField>ProductId</DataField>
+          <rd:TypeName>System.Decimal</rd:TypeName>
+        </Field>
+        <Field Name="ProductMark">
+          <DataField>ProductMark</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="ProductName">
+          <DataField>ProductName</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="ProfessionId">
+          <DataField>ProfessionId</DataField>
+          <rd:TypeName>System.Decimal</rd:TypeName>
+        </Field>
+        <Field Name="ProfessionName">
+          <DataField>ProfessionName</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="Prtnorm1">
+          <DataField>Prtnorm1</DataField>
+          <rd:TypeName>System.Decimal</rd:TypeName>
+        </Field>
+        <Field Name="Prtnorm2">
+          <DataField>Prtnorm2</DataField>
+          <rd:TypeName>System.Decimal</rd:TypeName>
+        </Field>
+        <Field Name="Prtnorm3">
+          <DataField>Prtnorm3</DataField>
+          <rd:TypeName>System.Decimal</rd:TypeName>
+        </Field>
+        <Field Name="Prtnorm4">
+          <DataField>Prtnorm4</DataField>
+          <rd:TypeName>System.Decimal</rd:TypeName>
+        </Field>
+        <Field Name="Prtnorm5">
+          <DataField>Prtnorm5</DataField>
+          <rd:TypeName>System.Decimal</rd:TypeName>
+        </Field>
+        <Field Name="Prtnorm6">
+          <DataField>Prtnorm6</DataField>
+          <rd:TypeName>System.Decimal</rd:TypeName>
+        </Field>
+        <Field Name="Razr">
+          <DataField>Razr</DataField>
+          <rd:TypeName>System.Decimal</rd:TypeName>
+        </Field>
+        <Field Name="Rstk1">
+          <DataField>Rstk1</DataField>
+          <rd:TypeName>System.Decimal</rd:TypeName>
+        </Field>
+        <Field Name="Rstk2">
+          <DataField>Rstk2</DataField>
+          <rd:TypeName>System.Decimal</rd:TypeName>
+        </Field>
+        <Field Name="Rstk3">
+          <DataField>Rstk3</DataField>
+          <rd:TypeName>System.Decimal</rd:TypeName>
+        </Field>
+        <Field Name="Rstk4">
+          <DataField>Rstk4</DataField>
+          <rd:TypeName>System.Decimal</rd:TypeName>
+        </Field>
+        <Field Name="Rstk5">
+          <DataField>Rstk5</DataField>
+          <rd:TypeName>System.Decimal</rd:TypeName>
+        </Field>
+        <Field Name="Rstk6">
+          <DataField>Rstk6</DataField>
+          <rd:TypeName>System.Decimal</rd:TypeName>
+        </Field>
+        <Field Name="Vstk1">
+          <DataField>Vstk1</DataField>
+          <rd:TypeName>System.Decimal</rd:TypeName>
+        </Field>
+        <Field Name="Vstk2">
+          <DataField>Vstk2</DataField>
+          <rd:TypeName>System.Decimal</rd:TypeName>
+        </Field>
+        <Field Name="Vstk3">
+          <DataField>Vstk3</DataField>
+          <rd:TypeName>System.Decimal</rd:TypeName>
+        </Field>
+        <Field Name="Vstk4">
+          <DataField>Vstk4</DataField>
+          <rd:TypeName>System.Decimal</rd:TypeName>
+        </Field>
+        <Field Name="Vstk5">
+          <DataField>Vstk5</DataField>
+          <rd:TypeName>System.Decimal</rd:TypeName>
+        </Field>
+        <Field Name="Vstk6">
+          <DataField>Vstk6</DataField>
+          <rd:TypeName>System.Decimal</rd:TypeName>
+        </Field>
+      </Fields>
+      <rd:DataSetInfo>
+        <rd:DataSetName>LaborNorms.Entities.Reports</rd:DataSetName>
+        <rd:TableName>SummeryOfProductInContextOfProfessionAndOfDischarge</rd:TableName>
+        <rd:ObjectDataSourceType>LaborNorms.Entities.Reports.SummeryOfProductInContextOfProfessionAndOfDischarge, LaborNorms, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</rd:ObjectDataSourceType>
+      </rd:DataSetInfo>
+    </DataSet>
+  </DataSets>
+  <ReportParameters>
+    <ReportParameter Name="Date">
+      <DataType>String</DataType>
+      <Prompt>ReportParameter1</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="Koeft">
+      <DataType>Float</DataType>
+      <Prompt>ReportParameter1</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="Koefz">
+      <DataType>Float</DataType>
+      <Prompt>ReportParameter1</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="ProductId">
+      <DataType>String</DataType>
+      <Prompt>ReportParameter1</Prompt>
+    </ReportParameter>
+  </ReportParameters>
+  <rd:ReportUnitType>Cm</rd:ReportUnitType>
+  <rd:ReportID>8790e662-6cbb-44b1-9592-2c3585e3421d</rd:ReportID>
+</Report>

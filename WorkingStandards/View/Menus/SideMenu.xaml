@@ -1,0 +1,319 @@
+﻿<!-- Боковое меню главного окна приложения -->
+<UserControl x:Class="WorkingStandards.View.Menus.SideMenu"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:util="clr-namespace:WorkingStandards.Util"
+      d:DesignWidth="300"
+      mc:Ignorable="d" >
+    <UserControl.Resources>
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <!-- Иконки кнопок в SVG -->
+                <ResourceDictionary Source="../Util/SvgIconsDictionary.xaml" />
+            </ResourceDictionary.MergedDictionaries>
+        </ResourceDictionary>
+    </UserControl.Resources>
+
+    <ScrollViewer VerticalScrollBarVisibility="Auto">
+        <StackPanel Name="WrapperStackPanel">
+            <Expander Name="CalculationExpander"
+				      HorizontalAlignment="Stretch"
+					  HorizontalContentAlignment="Stretch" Width="Auto"
+					  IsExpanded="True"
+					  Cursor="Hand"
+					  Padding="2.5"
+					  Margin="2.5 5 2.5 2.5">
+                <!-- Правка дефекта с неотображением на некоторых машинах фона заголовка -->
+                <Expander.Header >
+                    <Border Background="{x:Static util:Constants.BackColor4_BlueBayoux}">
+                        <TextBlock Foreground="{x:Static util:Constants.ForeColor2_PapayaWhip}" 
+						           Text="Расчет сводных трудовых нормативов" 
+								   Padding="2.5"
+								   Width="{Binding ElementName=InternalExpander, Path=ActualWidth}"
+								   HorizontalAlignment="Stretch" />
+                    </Border>
+                </Expander.Header>
+                <StackPanel>
+                    <Button HorizontalContentAlignment="Left" Cursor="Hand" Margin="0 0 0 5" 
+                            ToolTip="Отметка деталей/изделий для расчета" 
+                            Click="DetailsForCalculationButton_OnClick" >
+                        <StackPanel Orientation="Horizontal">
+                            <Rectangle Width="20" Margin="5 0">
+                                <Rectangle.Fill>
+                                    <VisualBrush Visual="{StaticResource ListSvgIcon}" Stretch="Uniform" />
+                                </Rectangle.Fill>
+                            </Rectangle>
+                            <TextBlock Text="Отметка деталей для расчета" 
+                                       VerticalAlignment="Center" TextTrimming="CharacterEllipsis"/>
+                        </StackPanel>
+                    </Button>
+
+                    <Button HorizontalContentAlignment="Left" Cursor="Hand" Margin="0 0 0 5" 
+                            ToolTip="Расчет сводных трудовых нормативов" 
+                            Click="CalculationButton_OnClick" >
+                        <StackPanel Orientation="Horizontal">
+                            <Rectangle Width="20" Margin="5 0">
+                                <Rectangle.Fill>
+                                    <VisualBrush Visual="{StaticResource AddSvgIcon}" Stretch="Uniform" />
+                                </Rectangle.Fill>
+                            </Rectangle>
+                            <TextBlock Text="Расчет" 
+                                       VerticalAlignment="Center" TextTrimming="CharacterEllipsis"/>
+                        </StackPanel>
+                    </Button>
+                </StackPanel>
+            </Expander>
+
+            <Expander Name="ReportsExpander"
+				HorizontalAlignment="Stretch"
+					  HorizontalContentAlignment="Stretch" Width="Auto"
+					  IsExpanded="True"
+					  Cursor="Hand"
+					  Padding="2.5"
+					  Margin="2.5 5 2.5 2.5" >
+                <!-- Правка дефекта с неотображением на некоторых машинах фона заголовка -->
+                <Expander.Header >
+                    <Border Background="{x:Static util:Constants.BackColor4_BlueBayoux}">
+                        <TextBlock Foreground="{x:Static util:Constants.ForeColor2_PapayaWhip}" 
+						           Text="Печать отчётов" 
+								   Padding="2.5"
+								   Width="{Binding ElementName=InternalExpander, Path=ActualWidth}"
+								   HorizontalAlignment="Stretch" />
+                    </Border>
+                </Expander.Header>
+                <StackPanel>
+                    <Button Name="DetailsForPrintButton"
+                            HorizontalContentAlignment="Left" Cursor="Hand" Margin="0 0 0 5" 
+                            ToolTip="Отметка деталей/изделий для печати" 
+                            Click="DetailsForPrintButton_OnClick" >
+                        <StackPanel Orientation="Horizontal">
+                            <Rectangle Width="20" Margin="5 0">
+                                <Rectangle.Fill>
+                                    <VisualBrush Visual="{StaticResource ListSvgIcon}" Stretch="Uniform" />
+                                </Rectangle.Fill>
+                            </Rectangle>
+                            <TextBlock Text="Отметка деталей для печати" 
+                                       VerticalAlignment="Center" TextTrimming="CharacterEllipsis"/>
+                        </StackPanel>
+                    </Button>
+
+                    <Button HorizontalContentAlignment="Left" Cursor="Hand" Margin="0 0 0 5" 
+                            ToolTip="Сводная по изделиям в разрезе цехов" 
+                            Click="SummeryOfProductsInContextOfWorkGuildButton_OnClick" >
+                        <StackPanel Orientation="Horizontal">
+                            <Rectangle Width="20" Margin="5 0">
+                                <Rectangle.Fill>
+                                    <VisualBrush Visual="{StaticResource PrintSvgIcon}" Stretch="Uniform" />
+                                </Rectangle.Fill>
+                            </Rectangle>
+                            <TextBlock Text="Сводная по изделиям в разрезе цехов" 
+                                       VerticalAlignment="Center" TextTrimming="CharacterEllipsis"/>
+                        </StackPanel>
+                    </Button>
+                    <Button HorizontalContentAlignment="Left" Cursor="Hand" Margin="0 0 0 5" 
+                            ToolTip="По изделиям в разрезе цехов по разрядам" 
+                            Click="SummeryOfProductsInContextOfWorkGuildOfDischargesButton_OnClick" >
+                        <StackPanel Orientation="Horizontal">
+                            <Rectangle Width="20" Margin="5 0">
+                                <Rectangle.Fill>
+                                    <VisualBrush Visual="{StaticResource PrintSvgIcon}" Stretch="Uniform" />
+                                </Rectangle.Fill>
+                            </Rectangle>
+                            <TextBlock Text="По изделиям в разрезе цехов по разрядам" 
+                                       VerticalAlignment="Center" TextTrimming="CharacterEllipsis"/>
+                        </StackPanel>
+                    </Button>
+                    <Button HorizontalContentAlignment="Left" Cursor="Hand" Margin="0 0 0 5" 
+                            ToolTip="По изделиям в разрезе цехов,уч-ков(для цехов)" 
+                            Click="SummeryOfProductsInContextOfWorkGuildAndAreaForWorkGuildButton_OnClick" >
+                        <StackPanel Orientation="Horizontal">
+                            <Rectangle Width="20" Margin="5 0">
+                                <Rectangle.Fill>
+                                    <VisualBrush Visual="{StaticResource PrintSvgIcon}" Stretch="Uniform" />
+                                </Rectangle.Fill>
+                            </Rectangle>
+                            <TextBlock Text="По изделиям в разрезе цехов,уч-ков(для цехов)" 
+                                       VerticalAlignment="Center" TextTrimming="CharacterEllipsis"/>
+                        </StackPanel>
+                    </Button>
+                    <Button HorizontalContentAlignment="Left" Cursor="Hand" Margin="0 0 0 5" 
+                            ToolTip="Сводная по изделиям по профессиям в разрезе разрядов" 
+                            Click="SummeryOfProductsInContextOfProfessionOfDischargesButton_OnClick" >
+                        <StackPanel Orientation="Horizontal">
+                            <Rectangle Width="20" Margin="5 0">
+                                <Rectangle.Fill>
+                                    <VisualBrush Visual="{StaticResource PrintSvgIcon}" Stretch="Uniform" />
+                                </Rectangle.Fill>
+                            </Rectangle>
+                            <TextBlock Text="Сводная по изделиям по профессиям в разрезе разрядов" 
+                                       VerticalAlignment="Center" TextTrimming="CharacterEllipsis"/>
+                        </StackPanel>
+                    </Button>
+                    <Button HorizontalContentAlignment="Left" Cursor="Hand" Margin="0 0 0 5" 
+                            ToolTip="Сводная по изделиям по профессиям в разрезе цехов, уч-ков" 
+                            Click="SummeryOfProductsOfProfessionInContextOfWorkGuildAndAreaButton_OnClick" >
+                        <StackPanel Orientation="Horizontal">
+                            <Rectangle Width="20" Margin="5 0">
+                                <Rectangle.Fill>
+                                    <VisualBrush Visual="{StaticResource PrintSvgIcon}" Stretch="Uniform" />
+                                </Rectangle.Fill>
+                            </Rectangle>
+                            <TextBlock Text="Сводная по изделиям по профессиям в разрезе цехов, уч-ков" 
+                                       VerticalAlignment="Center" TextTrimming="CharacterEllipsis"/>
+                        </StackPanel>
+                    </Button>
+                    <Button HorizontalContentAlignment="Left" Cursor="Hand" Margin="0 0 0 5" 
+                            ToolTip="Печать по изделиям в разрезе детале-операций(сжатая печать)" 
+                            Click="PrintingOfProductInContextOfDetalOperationsButton_OnClick" >
+                        <StackPanel Orientation="Horizontal">
+                            <Rectangle Width="20" Margin="5 0">
+                                <Rectangle.Fill>
+                                    <VisualBrush Visual="{StaticResource PrintSvgIcon}" Stretch="Uniform" />
+                                </Rectangle.Fill>
+                            </Rectangle>
+                            <TextBlock Text="Печать по изделиям в разрезе детале-операций(сжатая печать)" 
+                                       VerticalAlignment="Center" TextTrimming="CharacterEllipsis"/>
+                        </StackPanel>
+                    </Button>
+                    <Button HorizontalContentAlignment="Left" Cursor="Hand" Margin="0 0 0 5" 
+                            ToolTip="Печать по изделиям в разрезе деталей" Click="PrintingOfProductInContextOfDetailsButton_OnClick" >
+                        <StackPanel Orientation="Horizontal">
+                            <Rectangle Width="20" Margin="5 0">
+                                <Rectangle.Fill>
+                                    <VisualBrush Visual="{StaticResource PrintSvgIcon}" Stretch="Uniform" />
+                                </Rectangle.Fill>
+                            </Rectangle>
+                            <TextBlock Text="Печать по изделиям в разрезе деталей" 
+                                       VerticalAlignment="Center" TextTrimming="CharacterEllipsis"/>
+                        </StackPanel>
+                    </Button>
+                    <Button HorizontalContentAlignment="Left" Cursor="Hand" Margin="0 0 0 5" 
+                            ToolTip="Просмотр трудоемкости и зарплаты на сбор.ед. по цехам" 
+                            Click="ComplexityAndSalaryOnUnitByWorkGuildsButton_OnClick" >
+                        <StackPanel Orientation="Horizontal">
+                            <Rectangle Width="20" Margin="5 0">
+                                <Rectangle.Fill>
+                                    <VisualBrush Visual="{StaticResource PrintSvgIcon}" Stretch="Uniform" />
+                                </Rectangle.Fill>
+                            </Rectangle>
+                            <TextBlock Text="Трудоемкости и зарплаты на сбор.ед. по цехам" 
+                                       VerticalAlignment="Center" TextTrimming="CharacterEllipsis"/>
+                        </StackPanel>
+                    </Button>
+                </StackPanel>
+            </Expander>
+
+            <!--Аннулируемые изделия-->
+            <Expander Name="CancelledDetailExpander"
+                      HorizontalAlignment="Stretch"
+                      HorizontalContentAlignment="Stretch" Width="Auto"
+                      IsExpanded="True"
+                      Cursor="Hand"
+                      Padding="2.5"
+                      Margin="2.5 5 2.5 2.5" >
+                <!-- Правка дефекта с неотображением на некоторых машинах фона заголовка -->
+                <Expander.Header >
+                    <Border Background="{x:Static util:Constants.BackColor4_BlueBayoux}">
+                        <TextBlock Foreground="{x:Static util:Constants.ForeColor2_PapayaWhip}" 
+                                   Text="Аннулируемые изделия" 
+                                   Padding="2.5"
+                                   Width="{Binding ElementName=InternalExpander, Path=ActualWidth}"
+                                   HorizontalAlignment="Stretch" />
+                    </Border>
+                </Expander.Header>
+                <StackPanel>
+                    <Button HorizontalContentAlignment="Left" Cursor="Hand" Margin="0 0 0 5" 
+                            ToolTip="Аннулируемые изделия" 
+                            Click="CancelledDetailButton_OnClick" >
+                        <StackPanel Orientation="Horizontal">
+                            <Rectangle Width="20" Margin="5 0">
+                                <Rectangle.Fill>
+                                    <VisualBrush Visual="{StaticResource ListSvgIcon}" Stretch="Uniform" />
+                                </Rectangle.Fill>
+                            </Rectangle>
+                            <TextBlock Text="Просмотр аннулируемых изделий" 
+                                       VerticalAlignment="Center" TextTrimming="CharacterEllipsis"/>
+                        </StackPanel>
+                    </Button>
+                    <Button HorizontalContentAlignment="Left" Cursor="Hand" Margin="0 0 0 5" 
+                            ToolTip="Печать аннулируемого изделия" 
+                            Click="PrintCancelledDetailButton_OnClick">
+                        <StackPanel Orientation="Horizontal">
+                            <Rectangle Width="20" Margin="5 0">
+                                <Rectangle.Fill>
+                                    <VisualBrush Visual="{StaticResource PrintSvgIcon}" Stretch="Uniform" />
+                                </Rectangle.Fill>
+                            </Rectangle>
+                            <TextBlock Text="Печать аннулируемых изделий" 
+                                       VerticalAlignment="Center" TextTrimming="CharacterEllipsis"/>
+                        </StackPanel>
+                    </Button>
+                    <Button HorizontalContentAlignment="Left" Cursor="Hand" Margin="0 0 0 5" 
+                            ToolTip="Печать аннулируемых изделий за месяц" 
+                            Click="PrintCancelledDetailForMonthButton_OnClick">
+                        <StackPanel Orientation="Horizontal">
+                            <Rectangle Width="20" Margin="5 0">
+                                <Rectangle.Fill>
+                                    <VisualBrush Visual="{StaticResource PrintSvgIcon}" Stretch="Uniform" />
+                                </Rectangle.Fill>
+                            </Rectangle>
+                            <TextBlock Text="Печать аннулируемых изделий за месяц" 
+                                       VerticalAlignment="Center" TextTrimming="CharacterEllipsis"/>
+                        </StackPanel>
+                    </Button>
+                </StackPanel>
+            </Expander>
+
+            <!--Выпуск-->
+            <Expander Name="ReleaseExpander"
+				HorizontalAlignment="Stretch"
+					  HorizontalContentAlignment="Stretch" Width="Auto"
+					  IsExpanded="True"
+					  Cursor="Hand"
+					  Padding="2.5"
+					  Margin="2.5 5 2.5 2.5" >
+                <!-- Правка дефекта с неотображением на некоторых машинах фона заголовка -->
+                <Expander.Header >
+                    <Border Background="{x:Static util:Constants.BackColor4_BlueBayoux}">
+                        <TextBlock Foreground="{x:Static util:Constants.ForeColor2_PapayaWhip}" 
+						           Text="Выпуск" 
+								   Padding="2.5"
+								   Width="{Binding ElementName=InternalExpander, Path=ActualWidth}"
+								   HorizontalAlignment="Stretch" />
+                    </Border>
+                </Expander.Header>
+                <StackPanel>
+                    <Button Name="ReleaseTableButton"
+                            HorizontalContentAlignment="Left" Cursor="Hand" Margin="0 0 0 5" 
+                            ToolTip="Редактирование выпуска изделий" 
+                            Click="ReleaseTableButton_OnClick" >
+                        <StackPanel Orientation="Horizontal">
+                            <Rectangle Width="20" Margin="5 0">
+                                <Rectangle.Fill>
+                                    <VisualBrush Visual="{StaticResource ListSvgIcon}" Stretch="Uniform" />
+                                </Rectangle.Fill>
+                            </Rectangle>
+                            <TextBlock Text="Редактирование выпуска изделий" 
+                                       VerticalAlignment="Center" TextTrimming="CharacterEllipsis"/>
+                        </StackPanel>
+                    </Button>
+                    <Button HorizontalContentAlignment="Left" Cursor="Hand" Margin="0 0 0 5" 
+                            ToolTip="Расчёт численности работников по цехам на выпуск" 
+                            Click="CalculationNumberWorkguildWorkersRealaseButton_OnClick" >
+                        <StackPanel Orientation="Horizontal">
+                            <Rectangle Width="20" Margin="5 0">
+                                <Rectangle.Fill>
+                                    <VisualBrush Visual="{StaticResource PrintSvgIcon}" Stretch="Uniform" />
+                                </Rectangle.Fill>
+                            </Rectangle>
+                            <TextBlock Text="Расчёт численности работников по цехам на выпуск" 
+                                       VerticalAlignment="Center" TextTrimming="CharacterEllipsis"/>
+                        </StackPanel>
+                    </Button>
+                </StackPanel>
+            </Expander>
+        </StackPanel>
+    </ScrollViewer>
+</UserControl>
